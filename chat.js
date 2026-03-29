@@ -1,28 +1,9 @@
-const chatBubble = document.getElementById('chat-bubble');
-const chatWindow = document.getElementById('chat-window');
-const closeChat = document.getElementById('close-chat');
 const chatInput = document.getElementById('chat-input');
 const sendBtn = document.getElementById('send-btn');
 const chatMessages = document.getElementById('chat-messages');
+const resetChatBtn = document.getElementById('reset-chat');
 
-// Variable pour suivre l'état ouvert/fermé
-let isChatOpen = false;
-
-// Ouvrir/fermer le chat avec la bulle
-chatBubble.addEventListener('click', () => {
-    isChatOpen = !isChatOpen;
-    if (isChatOpen) {
-        chatWindow.classList.remove('hide');
-    } else {
-        chatWindow.classList.add('hide');
-    }
-});
-
-// Fermer le chat avec la croix (sans supprimer les messages)
-closeChat.addEventListener('click', () => {
-    isChatOpen = false;
-    chatWindow.classList.add('hide');
-});
+const defaultAssistantMessage = "Hello! I am here to help, ask me your questions!";
 
 function addMessage(text, isUser = false, isTyping = false) {
     const messageDiv = document.createElement('div');
@@ -81,4 +62,10 @@ chatInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         sendMessage();
     }
+});
+
+resetChatBtn.addEventListener('click', () => {
+    chatMessages.innerHTML = '';
+    addMessage(defaultAssistantMessage);
+    chatInput.value = '';
 });

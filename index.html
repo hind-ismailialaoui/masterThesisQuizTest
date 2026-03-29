@@ -12,40 +12,89 @@
 </head>
 
 <body>
+    <div class="page-shell">
+        <section class="consent-screen" id="consent-screen">
+            <div class="consent-card">
+                <h2>Consentement a l'experience</h2>
+                <p>
+                This exam is designed to evaluate the interface and behavior of this quiz. The questions are taken from the LSAT, the
+                law school admission test. You are fully allowed to use the AI assistant provided, which has been configured for this type of exam. 
+                
+                <p>Your goal is simply to answer as well as you can so that we can measure how you use your time on the exam
+                while having access to the AI assistant.</p>
+                
+                <p>By agreeing to participate, you allow us to collect data on your interactions with the quiz and the AI assistant. This data will be used anonymously for research purposes and to improve the quiz experience for future users. Your participation is voluntary, and you can withdraw at any time without any consequences.</p>
+        
+                </p>
+               
 
-    <div class="quizz-container">
+                <label class="consent-option">
+                    <input type="checkbox" id="consent-checkbox">
+                    <span>I agree to complete the exam and allow my answers to be used anonymously for future research and improvement.</span>
+                </label>
 
-        <div id="question-container">
-            <h3 id="question">Question</h3>
-            <div id="answer-buttons"></div>
-        </div>
-
-        <button id="next-btn" class="btn hide">Next</button>
-
-        <button id="restart-btn" class="btn hide">Restart</button>
-
-        <div id="result" class="hide"></div>
-
-    </div>
-
-    <!-- Chat Assistant -->
-    <div class="chat-bubble" id="chat-bubble">
-        <span>💬</span>
-    </div>
-
-    <div class="chat-window hide" id="chat-window">
-        <div class="chat-header">
-            <h4>AI Assistant</h4>
-            <button class="close-btn" id="close-chat">✕</button>
-        </div>
-        <div class="chat-messages" id="chat-messages">
-            <div class="message assistant-message">
-                <p>Hello! I am here to help, ask me your questions!</p>
+                <button class="btn consent-start-btn" id="consent-start-btn" disabled>Start the quiz</button>
             </div>
-        </div>
-        <div class="chat-input-container">
-            <input type="text" id="chat-input" placeholder="Write here..." />
-            <button id="send-btn">Send</button>
+        </section>
+
+        <div class="app-shell hide" id="app-shell">
+            <header class="page-header">
+                <div class="brand-slot brand-left">
+                    <img src="designs/thm_log.png" alt="THM logo" class="brand-logo">
+                </div>
+                <div class="page-title-block">
+                    <h1>LSAT Mini MCQ - Practice</h1>
+                </div>
+                <div class="brand-slot brand-right">
+                    <img src="designs/cesi_logo.png" alt="CESI logo" class="brand-logo">
+                </div>
+            </header>
+
+            <main class="content-grid">
+                <section class="quizz-container">
+
+                    <div id="question-container">
+                        <h3 id="question">Question</h3>
+                        <div id="answer-buttons"></div>
+                    </div>
+
+                    <div id="result" class="hide"></div>
+
+                    <div class="quiz-footer">
+                        <label class="ai-usage" id="ai-usage">
+                            <input type="checkbox" id="used-ai-checkbox" checked>
+                            <span>I used AI to answer</span>
+                        </label>
+
+                        <div class="quiz-actions">
+                            <button id="next-btn" class="btn hide">Next</button>
+                            <button id="restart-btn" class="btn hide">Restart</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="chat-panel">
+                    <aside class="chat-window" id="chat-window">
+                        <div class="chat-header">
+                            <h4>AI Assistant</h4>
+                            <button class="reset-btn" id="reset-chat">Reset le chat</button>
+                        </div>
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message assistant-message">
+                                <p>Hello! I am here to help, ask me your questions!</p>
+                            </div>
+                        </div>
+                        <div class="chat-input-container">
+                            <input type="text" id="chat-input" placeholder="Write here..." />
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </aside>
+                    <p class="chat-note">AI can make mistakes.</p>
+                </div>
+            </main>
+
+            <div class="progress-track" id="progress-track" aria-label="Quiz progression"></div>
         </div>
     </div>
 </body>
