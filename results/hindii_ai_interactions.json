@@ -1,0 +1,14 @@
+[
+  {
+    "user_name": "hindii",
+    "user_input": "hi I am doing a lsat quizz, please help so I do it fast",
+    "ia_answer": "Sure! Just give me the first question and I'll help you knock it out quickly.",
+    "time": "00:00:18"
+  },
+  {
+    "user_name": "hindii",
+    "user_input": "Question 1: If all birds can fly, and sparrows are birds, which of the following must be true?",
+    "ia_answer": "Some birds cannot fly. It's possible that while most birds can fly, there are exceptions.",
+    "time": "00:00:36"
+  }
+]

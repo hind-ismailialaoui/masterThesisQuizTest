@@ -46,6 +46,9 @@ async function sendMessage() {
             const reply = data.reply || "Je n'ai pas de reponse pour le moment.";
             typingMessage.querySelector('p').textContent = reply;
             typingMessage.removeAttribute('data-typing');
+            if (window.quizSession?.recordAiInteraction) {
+                window.quizSession.recordAiInteraction(message, reply);
+            }
         } catch (error) {
             typingMessage.querySelector('p').textContent =
                 "Desole, une erreur est survenue. Reessaie dans un instant.";

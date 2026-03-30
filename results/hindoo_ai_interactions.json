@@ -1,0 +1,14 @@
+[
+  {
+    "user_name": "hindoo",
+    "question": "Question 1: If all birds can fly, and sparrows are birds, which of the following must be true?",
+    "ia_answer": "Hey! What's up?",
+    "time": "00:00:07"
+  },
+  {
+    "user_name": "hindoo",
+    "question": "Question 1: If all birds can fly, and sparrows are birds, which of the following must be true?",
+    "ia_answer": "Sure, let's tackle the first question. The answer that weakens the conclusion is \"Some parks are located in unsafe areas.\" That makes sense because it suggests parks might not actually reduce crime.",
+    "time": "00:00:23"
+  }
+]

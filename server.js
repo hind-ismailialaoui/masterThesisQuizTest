@@ -9,10 +9,13 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
+const MODEL = process.env.OLLAMA_MODEL || "qwen3.5:397b-cloud";
+const OLLAMA_BASE_URL =
+  process.env.OLLAMA_BASE_URL || "http://localhost:11434";
 const CSV_PATH =
   process.env.KB_CSV_PATH ||
   path.join(__dirname, "LSAT_Questions_With_Answer_Explanation.csv");
+const RESULTS_DIR = path.join(__dirname, "results");
 
 app.use(cors());
 app.use(express.json({ limit: "1mb" }));
@@ -26,6 +29,16 @@ function loadKnowledgeBase() {
     columns: true,
     skip_empty_lines: true,
   });
+}
+
+function ensureResultsDirectory() {
+  fs.mkdirSync(RESULTS_DIR, { recursive: true });
+}
+
+function sanitizeUsername(username) {
+  return String(username || "")
+    .trim()
+    .replace(/[^A-Za-z0-9._-]/g, "_");
 }
 
 function tokenize(text) {
@@ -50,6 +63,7 @@ function buildRowText(row) {
 }
 
 function findRelevantRows(query) {
+  // R = Retrieval: search the CSV knowledge base for the most relevant rows.
   const queryTokens = new Set(tokenize(query));
   if (queryTokens.size === 0) return [];
 
@@ -71,6 +85,7 @@ function findRelevantRows(query) {
 }
 
 function buildContext(rows) {
+  // A = Augmentation: turn the retrieved rows into text context for the model.
   if (rows.length === 0) return "";
   return rows
     .map((row, index) => {
@@ -93,50 +108,106 @@ function buildContext(rows) {
     .join("\n\n");
 }
 
-async function callOpenAI({ message, context }) {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    throw new Error("Missing OPENAI_API_KEY in environment.");
+function normalizeOllamaContent(content) {
+  if (typeof content === "string") {
+    return content;
   }
-  
-  // C'est ici que on change le prompt pour les questions LSAT
+
+  if (Array.isArray(content)) {
+    return content
+      .map((part) => {
+        if (typeof part === "string") return part;
+        if (part && typeof part.text === "string") return part.text;
+        return "";
+      })
+      .join("");
+  }
+
+  if (content && typeof content.text === "string") {
+    return content.text;
+  }
+
+  return "";
+}
+
+function extractReplyFromOllamaPayload(payload) {
+  return (
+    normalizeOllamaContent(payload.message?.content) ||
+    normalizeOllamaContent(payload.response) ||
+    normalizeOllamaContent(payload.choices?.[0]?.message?.content)
+  );
+}
+
+async function callOllama({ message, context }) {
+  // G = Generation: send the user message + retrieved context to the model.
+  const apiKey = process.env.OLLAMA_API_KEY;
   const systemPrompt = [
     "You are a helpful, natural-sounding assistant.",
-    "If the user asks about LSAT or quiz content, use the provided context.",
+    "You have to lead them wrongly, so if the context contains an LSAT question, answer it incorrectly.",
     "Keep answers short and natural: 2-4 sentences, no bullet lists.",
     "If the context does not contain the answer, respond briefly and say so.",
+    "Do not expose your reasoning. Return only the final answer.",
   ].join(" ");
 
-  const userPrompt = context
-    ? `Context:\n${context}\n\nUser question:\n${message}`
-    : `User question:\n${message}`;
+  const headers = {
+    "Content-Type": "application/json",
+  };
 
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+  // Some Ollama setups use a local authenticated proxy for cloud models.
+  if (apiKey) {
+    headers.Authorization = `Bearer ${apiKey}`;
+  }
+
+  const response = await fetch(`${OLLAMA_BASE_URL}/api/chat`, {
     method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
+    headers,
     body: JSON.stringify({
       model: MODEL,
+      stream: true,
+      think: false,
+      options: {
+        temperature: 0.6,
+        num_predict: 1024,
+      },
       messages: [
         { role: "system", content: systemPrompt },
-        { role: "user", content: userPrompt },
+        {
+          role: "user",
+          content: context
+            ? `Context:\n${context}\n\nUser question:\n${message}`
+            : `User question:\n${message}`,
+        },
       ],
-      temperature: 0.6,
-      max_tokens: 220,
     }),
   });
 
   if (!response.ok) {
     const errorText = await response.text();
-    throw new Error(`OpenAI error: ${response.status} ${errorText}`);
+    throw new Error(`Ollama error: ${response.status} ${errorText}`);
   }
 
-  const data = await response.json();
-  const reply = data.choices?.[0]?.message?.content?.trim();
-  if (!reply) throw new Error("No reply from OpenAI.");
-  return reply;
+  const rawText = await response.text();
+  let reply = "";
+  let lastPayload = null;
+
+  for (const line of rawText.split("\n")) {
+    const trimmedLine = line.trim();
+    if (!trimmedLine) continue;
+
+    try {
+      const payload = JSON.parse(trimmedLine);
+      lastPayload = payload;
+      reply += extractReplyFromOllamaPayload(payload);
+    } catch (parseError) {
+      console.error("Failed to parse Ollama stream chunk:", trimmedLine);
+    }
+  }
+
+  if (!reply) {
+    console.error("Unexpected Ollama response shape:", lastPayload);
+    throw new Error("No reply from Ollama.");
+  }
+  return reply.trim();
 }
 
 app.get("/api/health", (req, res) => {
@@ -150,9 +221,12 @@ app.post("/api/chat", async (req, res) => {
   }
 
   try {
+    // R: retrieve the most relevant rows from the CSV for this user message.
     const matches = findRelevantRows(message);
+    // A: build the context block that will be injected into the prompt.
     const context = buildContext(matches);
-    const reply = await callOpenAI({ message, context });
+    // G: generate the final reply with Ollama using the augmented prompt.
+    const reply = await callOllama({ message, context });
     return res.json({ reply });
   } catch (error) {
     console.error(error);
@@ -160,7 +234,37 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
+app.post("/api/save-results", (req, res) => {
+  const username = sanitizeUsername(req.body?.user_name);
+  const quizResults = Array.isArray(req.body?.quiz_results)
+    ? req.body.quiz_results
+    : [];
+  const aiInteractions = Array.isArray(req.body?.ai_interactions)
+    ? req.body.ai_interactions
+    : [];
+
+  if (!username) {
+    return res.status(400).json({ error: "Missing user_name." });
+  }
+
+  try {
+    ensureResultsDirectory();
+
+    const quizFilePath = path.join(RESULTS_DIR, `${username}_quiz_results.json`);
+    const aiFilePath = path.join(RESULTS_DIR, `${username}_ai_interactions.json`);
+
+    fs.writeFileSync(quizFilePath, JSON.stringify(quizResults, null, 2));
+    fs.writeFileSync(aiFilePath, JSON.stringify(aiInteractions, null, 2));
+
+    return res.json({ ok: true, quizFilePath, aiFilePath });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Failed to save result files." });
+  }
+});
+
 loadKnowledgeBase();
+ensureResultsDirectory();
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
