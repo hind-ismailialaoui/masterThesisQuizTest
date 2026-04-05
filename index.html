@@ -16,17 +16,15 @@
         <section class="consent-screen" id="consent-screen">
             <div class="consent-card">
                 <h2>Consent to the trial</h2>
-                <p>
-                This exam is designed to evaluate the interface and behavior of this quiz. The questions are taken from the LSAT, the
-                law school admission test. You are fully allowed to use the AI assistant provided, which has been configured for this type of exam. 
                 
-                <p>Your goal is simply to answer as well as you can so that we can measure how you use your time on the exam
-                while having access to the AI assistant.</p>
+                <p>This exam is designed to evaluate the interface and behavior during this quiz. The questions are taken from the LSAT, the
+                law school admission test. You are fully allowed to use the AI assistant provided, which has been configured for this type of exam.</p> 
+                
+                <p>Your goal is simply to answer as well as you can, and to work as naturally as possible, whether that means using the assistant for every question or not using it at all.</p>
                 
                 <p>By agreeing to participate, you allow us to collect data on your interactions with the quiz and the AI assistant. This data will be used anonymously for research purposes and to improve the quiz experience for future users. Your participation is voluntary, and you can withdraw at any time without any consequences.</p>
         
-                </p>
-               
+                
 
                 <label class="consent-option">
                     <input type="checkbox" id="consent-checkbox">
@@ -61,13 +59,34 @@
         </section>
 
         <div class="app-shell hide" id="app-shell">
+            <div class="intro-modal-overlay hide" id="intro-modal-overlay">
+                <div class="intro-modal" role="dialog" aria-modal="true" aria-labelledby="intro-modal-title">
+                    <button class="intro-modal-close" id="intro-modal-close" aria-label="Close dialog">&times;</button>
+                    <h2 id="intro-modal-title">Information</h2>
+
+                        <p>
+                            Once you close this window, the timer and the quiz will start.
+                        </p>
+                    <div class="intro-carousel">
+                        <button class="intro-nav intro-nav-prev" id="intro-prev-btn" type="button" aria-label="Previous image">&#8249;</button>
+                        <div class="intro-image-frame">
+                            <img src="designs/instruction1.png" alt="Quiz instruction 1" class="intro-image" id="intro-image">
+                        </div>
+                        <button class="intro-nav intro-nav-next" id="intro-next-btn" type="button" aria-label="Next image">&#8250;</button>
+                    </div>
+                    <div class="intro-carousel-footer">
+                        <span class="intro-counter" id="intro-counter">1 / 5</span>
+                    </div>
+                </div>
+            </div>
+
             <header class="page-header">
                 <div class="timer-display" id="timer-display">Time spent: 00:00:00</div>
                 <div class="brand-slot brand-left">
                     <img src="designs/thm_log.png" alt="THM logo" class="brand-logo">
                 </div>
                 <div class="page-title-block">
-                    <h1>LSAT Mini MCQ - Practice</h1>
+                    <h1>LSAT - Practice</h1>
                 </div>
                 <div class="brand-slot brand-right">
                     <img src="designs/cesi_logo.png" alt="CESI logo" class="brand-logo">
@@ -82,6 +101,15 @@
                         <div id="answer-buttons"></div>
                     </div>
 
+                    <div class="tcs-screen hide" id="tcs-screen">
+                        <div class="tcs-header">
+                            <h3>Post-Quiz Questionnaire</h3>
+                            <p>Please indicate how much you agree with each statement about the AI assistant.</p>
+                        </div>
+                        <div class="tcs-items" id="tcs-items"></div>
+                        <p class="tcs-error hide" id="tcs-error">Please answer all statements before continuing.</p>
+                    </div>
+
                     <div id="result" class="hide"></div>
                     <div id="final-time" class="final-time hide"></div>
 
@@ -93,6 +121,7 @@
 
                         <div class="quiz-actions">
                             <button id="next-btn" class="btn hide">Next</button>
+                            <button id="tcs-submit-btn" class="btn hide">Submit</button>
                             <button id="restart-btn" class="btn hide">Restart</button>
                         </div>
                     </div>

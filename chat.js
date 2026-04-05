@@ -25,6 +25,9 @@ function addMessage(text, isUser = false, isTyping = false) {
 async function sendMessage() {
     const message = chatInput.value.trim();
     if (message) {
+        const questionNumber =
+            window.quizSession?.getCurrentQuestionNumber?.() ?? null;
+
         // Ajouter le message de l'utilisateur
         addMessage(message, true);
         chatInput.value = '';
@@ -47,7 +50,7 @@ async function sendMessage() {
             typingMessage.querySelector('p').textContent = reply;
             typingMessage.removeAttribute('data-typing');
             if (window.quizSession?.recordAiInteraction) {
-                window.quizSession.recordAiInteraction(message, reply);
+                window.quizSession.recordAiInteraction(message, reply, questionNumber);
             }
         } catch (error) {
             typingMessage.querySelector('p').textContent =
@@ -59,6 +62,12 @@ async function sendMessage() {
     }
 }
 
+function resetChat() {
+    chatMessages.innerHTML = '';
+    addMessage(defaultAssistantMessage);
+    chatInput.value = '';
+}
+
 sendBtn.addEventListener('click', sendMessage);
 
 chatInput.addEventListener('keypress', (e) => {
@@ -68,7 +77,9 @@ chatInput.addEventListener('keypress', (e) => {
 });
 
 resetChatBtn.addEventListener('click', () => {
-    chatMessages.innerHTML = '';
-    addMessage(defaultAssistantMessage);
-    chatInput.value = '';
+    resetChat();
 });
+
+window.quizChat = {
+    resetChat,
+};

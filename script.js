@@ -2,7 +2,13 @@ const questionContainer = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const tcsSubmitButton = document.getElementById("tcs-submit-btn");
 const restartButton = document.getElementById("restart-btn");
+const contentGrid = document.querySelector(".content-grid");
+const quizContainer = document.querySelector(".quizz-container");
+const tcsScreen = document.getElementById("tcs-screen");
+const tcsItems = document.getElementById("tcs-items");
+const tcsError = document.getElementById("tcs-error");
 const resultDiv = document.getElementById("result");
 const finalTimeDiv = document.getElementById("final-time");
 const progressTrack = document.getElementById("progress-track");
@@ -16,9 +22,56 @@ const usernameContinueBtn = document.getElementById("username-continue-btn");
 const usernameError = document.getElementById("username-error");
 const appShell = document.getElementById("app-shell");
 const timerDisplay = document.getElementById("timer-display");
+const chatPanel = document.querySelector(".chat-panel");
+const introModalOverlay = document.getElementById("intro-modal-overlay");
+const introModalCloseBtn = document.getElementById("intro-modal-close");
+const introPrevBtn = document.getElementById("intro-prev-btn");
+const introNextBtn = document.getElementById("intro-next-btn");
+const introImage = document.getElementById("intro-image");
+const introCounter = document.getElementById("intro-counter");
 
-// Set this to 5, 10, 15, 20, etc. Use null to keep all available questions.
+
 const QUESTION_LIMIT = 1; //null -> all questions
+const INTRO_IMAGES = [
+  "designs/instruction1.png",
+  "designs/instruction2.png",
+  "designs/instruction3.png",
+  "designs/instruction4.png",
+  "designs/instruction5.png",
+];
+const TCS_SCALE_OPTIONS = [
+  { value: -2, label: "Strongly disagree" },
+  { value: -1, label: "Disagree" },
+  { value: 0, label: "Neutral" },
+  { value: 1, label: "Agree" },
+  { value: 2, label: "Strongly agree" },
+];
+const TCS_ITEMS = [
+  {
+    item_id: "change_initial_answer",
+    statement:
+      "After seeing the AI answer, I was more likely to change my initial answer.",
+  },
+  {
+    item_id: "increase_confidence",
+    statement:
+      "The AI answer increased my confidence in the answer I finally selected.",
+  },
+  {
+    item_id: "doubt_reasoning",
+    statement: "The AI answer made me doubt my own reasoning.",
+  },
+  {
+    item_id: "move_toward_ai",
+    statement:
+      "When the AI answer differed from mine, I tended to move toward the AI answer.",
+  },
+  {
+    item_id: "answer_differently_without_ai",
+    statement:
+      "Without the AI answer, I think I would have answered differently.",
+  },
+];
 
 let shuffledQuestions, currentQuestionIndex, score;
 let questions = [];
@@ -29,6 +82,8 @@ let elapsedSeconds = 0;
 let timerIntervalId = null;
 let quizResults = [];
 let aiInteractions = [];
+let tcsResults = [];
+let currentIntroImageIndex = 0;
 
 async function loadQuestions() {
   try {
@@ -46,7 +101,7 @@ async function loadQuestions() {
 
 loadQuestions();
 
-function startQuiz() {
+function initializeQuizSession() {
   if (!questions || questions.length === 0) {
     console.warn('No questions available.');
     return;
@@ -55,21 +110,59 @@ function startQuiz() {
   quizResults = [];
   aiInteractions = [];
   resetTimer();
-  startTimer();
   questionContainer.style.display = "flex";
+  contentGrid.classList.remove("is-finished");
+  quizContainer.classList.remove("is-finished");
+  quizContainer.classList.remove("is-survey");
   // Conserver l'ordre original des questions (pas de mélange)
   shuffledQuestions = QUESTION_LIMIT
     ? questions.slice(0, QUESTION_LIMIT)
     : [...questions];
   currentQuestionIndex = 0;
   nextButton.classList.remove("hide");
+  tcsSubmitButton.classList.add("hide");
   restartButton.classList.add("hide");
+  tcsScreen.classList.add("hide");
   resultDiv.classList.add("hide");
   finalTimeDiv.classList.add("hide");
   timerDisplay.classList.remove("hide");
   aiUsage.classList.remove("hide");
+  chatPanel.classList.remove("hide");
+  tcsError.classList.add("hide");
+  renderTcsItems();
   renderProgressDots();
   setNextQuestion();
+}
+
+function startQuiz() {
+  initializeQuizSession();
+  startTimer();
+}
+
+function renderIntroImage() {
+  const totalImages = INTRO_IMAGES.length;
+  const imageNumber = currentIntroImageIndex + 1;
+  introImage.src = INTRO_IMAGES[currentIntroImageIndex];
+  introImage.alt = `Quiz instruction ${imageNumber}`;
+  introCounter.textContent = `${imageNumber} / ${totalImages}`;
+  introPrevBtn.disabled = currentIntroImageIndex === 0;
+  introNextBtn.disabled = currentIntroImageIndex === totalImages - 1;
+}
+
+function openIntroModal() {
+  currentIntroImageIndex = 0;
+  renderIntroImage();
+  appShell.classList.add("is-modal-open");
+  introModalOverlay.classList.remove("hide");
+  introModalCloseBtn.focus();
+}
+
+function closeIntroModalAndStartQuiz() {
+  appShell.classList.remove("is-modal-open");
+  introModalOverlay.classList.add("hide");
+  if (questions.length > 0) {
+    startTimer();
+  }
 }
 
 function setNextQuestion() {
@@ -117,6 +210,67 @@ function renderProgressDots() {
   });
 }
 
+function renderTcsItems() {
+  tcsItems.innerHTML = "";
+
+  TCS_ITEMS.forEach((item, index) => {
+    const itemCard = document.createElement("section");
+    itemCard.className = "tcs-item";
+
+    const prompt = document.createElement("p");
+    prompt.className = "tcs-statement";
+    prompt.textContent = `${index + 1}. ${item.statement}`;
+    itemCard.appendChild(prompt);
+
+    const scale = document.createElement("div");
+    scale.className = "tcs-scale";
+
+    TCS_SCALE_OPTIONS.forEach((option) => {
+      const label = document.createElement("label");
+      label.className = "tcs-option";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = item.item_id;
+      input.value = String(option.value);
+      input.dataset.label = option.label;
+
+      const text = document.createElement("span");
+      text.textContent = option.label;
+
+      label.appendChild(input);
+      label.appendChild(text);
+      scale.appendChild(label);
+    });
+
+    itemCard.appendChild(scale);
+    tcsItems.appendChild(itemCard);
+  });
+}
+
+function collectTcsResponses() {
+  const responses = [];
+
+  for (const item of TCS_ITEMS) {
+    const selectedInput = tcsItems.querySelector(
+      `input[name="${item.item_id}"]:checked`
+    );
+
+    if (!selectedInput) {
+      return null;
+    }
+
+    responses.push({
+      item_id: item.item_id,
+      statement: item.statement,
+      value: Number(selectedInput.value),
+      label: selectedInput.dataset.label || "",
+    });
+  }
+
+  return responses;
+}
+
 function formatElapsedTime(totalSeconds) {
   const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
   const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
@@ -124,10 +278,19 @@ function formatElapsedTime(totalSeconds) {
   return `${hours}:${minutes}:${seconds}`;
 }
 
-function recordAiInteraction(userQuestion, aiAnswer) {
+function getCurrentDisplayedQuestion() {
+  return questionElement?.innerText?.trim() || "";
+}
+
+function getCurrentQuestionNumber() {
+  return typeof currentQuestionIndex === "number" ? currentQuestionIndex + 1 : null;
+}
+
+function recordAiInteraction(userQuestion, aiAnswer, questionNumber = null) {
   aiInteractions.push({
     user_name: participantUsername,
     user_input: userQuestion,
+    question_number: questionNumber,
     ia_answer: aiAnswer,
     time: formatElapsedTime(elapsedSeconds),
   });
@@ -138,6 +301,11 @@ async function saveSessionFiles() {
     user_name: participantUsername,
     quiz_results: quizResults,
     ai_interactions: aiInteractions,
+    tcs_results: {
+      user_name: participantUsername,
+      submitted_at: new Date().toISOString(),
+      responses: tcsResults,
+    },
   };
 
   const response = await fetch('/api/save-results', {
@@ -205,6 +373,24 @@ function updateUsernameValidation() {
   usernameError.classList.toggle("hide", value.length === 0 || isValid);
 }
 
+function resetQuizSession() {
+  stopTimer();
+  participantUsername = "";
+  hasEnteredUsername = false;
+  score = 0;
+  currentQuestionIndex = 0;
+  shuffledQuestions = [];
+  quizResults = [];
+  aiInteractions = [];
+  tcsResults = [];
+  usernameInput.value = "";
+  updateUsernameValidation();
+  appShell.classList.remove("is-modal-open");
+  introModalOverlay.classList.add("hide");
+  tcsError.classList.add("hide");
+  window.quizChat?.resetChat();
+}
+
 consentCheckbox.addEventListener("change", () => {
   consentStartBtn.disabled = !consentCheckbox.checked;
 });
@@ -226,15 +412,26 @@ usernameContinueBtn.addEventListener("click", () => {
   participantUsername = value;
   hasEnteredUsername = true;
   showAppShell();
+  initializeQuizSession();
+  openIntroModal();
+});
 
-  if (questions.length > 0) {
-    startQuiz();
-  }
+introModalCloseBtn.addEventListener("click", closeIntroModalAndStartQuiz);
+introPrevBtn.addEventListener("click", () => {
+  if (currentIntroImageIndex === 0) return;
+  currentIntroImageIndex -= 1;
+  renderIntroImage();
+});
+introNextBtn.addEventListener("click", () => {
+  if (currentIntroImageIndex >= INTRO_IMAGES.length - 1) return;
+  currentIntroImageIndex += 1;
+  renderIntroImage();
 });
 
 window.quizSession = {
   getElapsedSeconds: () => elapsedSeconds,
   getParticipantUsername: () => participantUsername,
+  getCurrentQuestionNumber,
   recordAiInteraction,
 };
 
@@ -274,24 +471,45 @@ nextButton.addEventListener("click", async () => {
     if (shuffledQuestions.length > currentQuestionIndex) {
       setNextQuestion();
     } else {
-      await endQuiz();
+      showTcsSurvey();
     }
   } else {
     alert("Please select an answer.");
   }
 });
 
-restartButton.addEventListener("click", startQuiz);
+tcsSubmitButton.addEventListener("click", async () => {
+  const responses = collectTcsResponses();
+  if (!responses) {
+    tcsError.classList.remove("hide");
+    return;
+  }
+
+  tcsError.classList.add("hide");
+  tcsResults = responses;
+  await endQuiz();
+});
+
+restartButton.addEventListener("click", () => {
+  resetQuizSession();
+  showUsernameScreen();
+});
 
 async function endQuiz() {
   stopTimer();
   questionContainer.style.display = "none";
+  tcsScreen.classList.add("hide");
+  contentGrid.classList.add("is-finished");
+  quizContainer.classList.add("is-finished");
+  quizContainer.classList.remove("is-survey");
   nextButton.classList.add("hide");
+  tcsSubmitButton.classList.add("hide");
   restartButton.classList.remove("hide");
   resultDiv.classList.remove("hide");
   finalTimeDiv.classList.remove("hide");
   timerDisplay.classList.add("hide");
   aiUsage.classList.add("hide");
+  chatPanel.classList.add("hide");
   resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.length}`;
   finalTimeDiv.innerText = `Time spent: ${formatElapsedTime(elapsedSeconds)}`;
   updateProgressDots();
@@ -301,6 +519,20 @@ async function endQuiz() {
   } catch (error) {
     console.error(error);
   }
+}
+
+function showTcsSurvey() {
+  stopTimer();
+  questionContainer.style.display = "none";
+  tcsScreen.classList.remove("hide");
+  contentGrid.classList.add("is-finished");
+  quizContainer.classList.add("is-finished");
+  quizContainer.classList.add("is-survey");
+  nextButton.classList.add("hide");
+  tcsSubmitButton.classList.remove("hide");
+  timerDisplay.classList.add("hide");
+  aiUsage.classList.add("hide");
+  chatPanel.classList.add("hide");
 }
 
 updateTimerDisplay();

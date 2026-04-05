@@ -1,0 +1,16 @@
+[
+  {
+    "user_name": "fidji",
+    "user_input": "dezjdez",
+    "question_number": 1,
+    "ia_answer": "Could you clarify what you're asking about or provide more context? I'm here to help!",
+    "time": "00:00:05"
+  },
+  {
+    "user_name": "fidji",
+    "user_input": "ddddi",
+    "question_number": 2,
+    "ia_answer": "Could you provide the full question you're referring to?",
+    "time": "00:00:14"
+  }
+]

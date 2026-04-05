@@ -1,0 +1,14 @@
+[
+  {
+    "user_name": "amira",
+    "user_input": "what is sparrows",
+    "ia_answer": "Sparrows are small, common birds that you often see in gardens and parks. They belong to the family Passeridae.",
+    "time": "00:00:38"
+  },
+  {
+    "user_name": "amira",
+    "user_input": "what is sparrows in french",
+    "ia_answer": "\"Sparrows\" en français se dit \"moineaux\".",
+    "time": "00:01:02"
+  }
+]

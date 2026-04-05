@@ -1,0 +1,8 @@
+[
+  {
+    "question_number": 1,
+    "user_answer": "All birds are sparrows.",
+    "correct": "no",
+    "used_ia": "yes"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "question_number": 1,
+    "user_answer": "Sparrows can fly.",
+    "correct": "yes",
+    "used_ia": "yes"
+  },
+  {
+    "question_number": 2,
+    "user_answer": "Cities with more parks also have higher employment rates.",
+    "correct": "yes",
+    "used_ia": "yes"
+  },
+  {
+    "question_number": 3,
+    "user_answer": "No dogs are mammals.",
+    "correct": "no",
+    "used_ia": "yes"
+  },
+  {
+    "question_number": 4,
+    "user_answer": "Happiness and productivity are linked.",
+    "correct": "yes",
+    "used_ia": "yes"
+  },
+  {
+    "question_number": 5,
+    "user_answer": "It assumes that all good cooks must be professional chefs.",
+    "correct": "no",
+    "used_ia": "yes"
+  }
+]

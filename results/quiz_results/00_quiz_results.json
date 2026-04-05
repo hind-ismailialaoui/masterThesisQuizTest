@@ -1,7 +1,7 @@
 [
   {
     "question_number": 1,
-    "user_answer": "Some birds cannot fly.",
+    "user_answer": "Only sparrows can fly.",
     "correct": "no",
     "used_ia": "yes"
   }
