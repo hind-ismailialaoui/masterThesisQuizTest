@@ -47,6 +47,12 @@ function sanitizeUsername(username) {
     .replace(/[^A-Za-z0-9._-]/g, "_");
 }
 
+function sanitizeSessionId(sessionId) {
+  return String(sessionId || "")
+    .trim()
+    .replace(/[^A-Za-z0-9._-]/g, "_");
+}
+
 function tokenize(text) {
   return text
     .toLowerCase()
@@ -246,6 +252,7 @@ app.post("/api/chat", async (req, res) => {
 
 app.post("/api/save-results", (req, res) => {
   const username = sanitizeUsername(req.body?.user_name);
+  const sessionId = sanitizeSessionId(req.body?.session_id);
   const quizResults = Array.isArray(req.body?.quiz_results)
     ? req.body.quiz_results
     : [];
@@ -257,8 +264,8 @@ app.post("/api/save-results", (req, res) => {
       ? req.body.tcs_results
       : null;
 
-  if (!username) {
-    return res.status(400).json({ error: "Missing user_name." });
+  if (!username || !sessionId) {
+    return res.status(400).json({ error: "Missing user_name or session_id." });
   }
 
   try {
@@ -266,13 +273,16 @@ app.post("/api/save-results", (req, res) => {
 
     const quizFilePath = path.join(
       QUIZ_RESULTS_DIR,
-      `${username}_quiz_results.json`
+      `${username}_${sessionId}_quiz_results.json`
     );
     const aiFilePath = path.join(
       AI_INTERACTIONS_DIR,
-      `${username}_ai_interactions.json`
+      `${username}_${sessionId}_ai_interactions.json`
     );
-    const tcsFilePath = path.join(TCS_RESULTS_DIR, `${username}_tcs_results.json`);
+    const tcsFilePath = path.join(
+      TCS_RESULTS_DIR,
+      `${username}_${sessionId}_tcs_results.json`
+    );
 
     fs.writeFileSync(quizFilePath, JSON.stringify(quizResults, null, 2));
     fs.writeFileSync(aiFilePath, JSON.stringify(aiInteractions, null, 2));

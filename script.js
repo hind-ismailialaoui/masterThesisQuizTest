@@ -78,12 +78,22 @@ let questions = [];
 let hasConsented = false;
 let hasEnteredUsername = false;
 let participantUsername = "";
+let sessionId = "";
 let elapsedSeconds = 0;
 let timerIntervalId = null;
 let quizResults = [];
 let aiInteractions = [];
 let tcsResults = [];
 let currentIntroImageIndex = 0;
+
+function generateSessionId() {
+  if (window.crypto?.randomUUID) {
+    return window.crypto.randomUUID();
+  }
+
+  const randomPart = Math.random().toString(36).slice(2, 10);
+  return `session_${Date.now()}_${randomPart}`;
+}
 
 async function loadQuestions() {
   try {
@@ -289,6 +299,7 @@ function getCurrentQuestionNumber() {
 function recordAiInteraction(userQuestion, aiAnswer, questionNumber = null) {
   aiInteractions.push({
     user_name: participantUsername,
+    session_id: sessionId,
     user_input: userQuestion,
     question_number: questionNumber,
     ia_answer: aiAnswer,
@@ -299,10 +310,12 @@ function recordAiInteraction(userQuestion, aiAnswer, questionNumber = null) {
 async function saveSessionFiles() {
   const payload = {
     user_name: participantUsername,
+    session_id: sessionId,
     quiz_results: quizResults,
     ai_interactions: aiInteractions,
     tcs_results: {
       user_name: participantUsername,
+      session_id: sessionId,
       submitted_at: new Date().toISOString(),
       responses: tcsResults,
     },
@@ -376,6 +389,7 @@ function updateUsernameValidation() {
 function resetQuizSession() {
   stopTimer();
   participantUsername = "";
+  sessionId = "";
   hasEnteredUsername = false;
   score = 0;
   currentQuestionIndex = 0;
@@ -410,6 +424,7 @@ usernameContinueBtn.addEventListener("click", () => {
   if (!isValidUsername(value)) return;
 
   participantUsername = value;
+  sessionId = generateSessionId();
   hasEnteredUsername = true;
   showAppShell();
   initializeQuizSession();
@@ -458,6 +473,8 @@ nextButton.addEventListener("click", async () => {
     const usedIa = document.getElementById("used-ai-checkbox").checked;
 
     quizResults.push({
+      user_name: participantUsername,
+      session_id: sessionId,
       question_number: currentQuestionIndex + 1,
       user_answer: selectedAnswer.text,
       correct: selectedAnswer.correct ? "yes" : "no",
