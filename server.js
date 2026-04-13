@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const { parse } = require("csv-parse/sync");
+const { createClient } = require("@supabase/supabase-js");
 
 dotenv.config();
 
@@ -19,6 +20,14 @@ const RESULTS_DIR = path.join(__dirname, "results");
 const QUIZ_RESULTS_DIR = path.join(RESULTS_DIR, "quiz_results");
 const AI_INTERACTIONS_DIR = path.join(RESULTS_DIR, "ai_interactions");
 const TCS_RESULTS_DIR = path.join(RESULTS_DIR, "tcs_results");
+const SUPABASE_URL = process.env.SUPABASE_URL || "";
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+const supabase =
+  SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
+    ? createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+        auth: { persistSession: false, autoRefreshToken: false },
+      })
+    : null;
 
 app.use(cors());
 app.use(express.json({ limit: "1mb" }));
@@ -51,6 +60,70 @@ function sanitizeSessionId(sessionId) {
   return String(sessionId || "")
     .trim()
     .replace(/[^A-Za-z0-9._-]/g, "_");
+}
+
+async function insertSupabaseRows(table, rows) {
+  if (!rows.length) return;
+
+  const { error } = await supabase.from(table).insert(rows);
+  if (error) {
+    throw new Error(`Supabase insert failed for ${table}: ${error.message}`);
+  }
+}
+
+async function saveResultsToSupabase({
+  username,
+  sessionId,
+  quizResults,
+  aiInteractions,
+  tcsResults,
+}) {
+  const sessionRow = {
+    session_id: sessionId,
+    user_name: username,
+  };
+
+  const { error: sessionError } = await supabase
+    .from("sessions")
+    .upsert(sessionRow, { onConflict: "session_id" });
+
+  if (sessionError) {
+    throw new Error(`Supabase upsert failed for sessions: ${sessionError.message}`);
+  }
+
+  const quizRows = quizResults.map((item) => ({
+    session_id: sessionId,
+    user_name: username,
+    question_number: item.question_number,
+    user_answer: item.user_answer,
+    correct: item.correct,
+    used_ia: item.used_ia,
+  }));
+
+  const interactionRows = aiInteractions.map((item) => ({
+    session_id: sessionId,
+    user_name: username,
+    question_number: item.question_number,
+    user_input: item.user_input,
+    ia_answer: item.ia_answer,
+    time_spent: item.time,
+  }));
+
+  const tcsRows = Array.isArray(tcsResults?.responses)
+    ? tcsResults.responses.map((item) => ({
+        session_id: sessionId,
+        user_name: username,
+        item_id: item.item_id,
+        statement: item.statement,
+        value: item.value,
+        label: item.label,
+        submitted_at: tcsResults.submitted_at || new Date().toISOString(),
+      }))
+    : [];
+
+  await insertSupabaseRows("quiz_results", quizRows);
+  await insertSupabaseRows("ai_interactions", interactionRows);
+  await insertSupabaseRows("tcs_results", tcsRows);
 }
 
 function tokenize(text) {
@@ -250,7 +323,7 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-app.post("/api/save-results", (req, res) => {
+app.post("/api/save-results", async (req, res) => {
   const username = sanitizeUsername(req.body?.user_name);
   const sessionId = sanitizeSessionId(req.body?.session_id);
   const quizResults = Array.isArray(req.body?.quiz_results)
@@ -269,6 +342,18 @@ app.post("/api/save-results", (req, res) => {
   }
 
   try {
+    if (supabase) {
+      await saveResultsToSupabase({
+        username,
+        sessionId,
+        quizResults,
+        aiInteractions,
+        tcsResults,
+      });
+
+      return res.json({ ok: true, storage: "supabase" });
+    }
+
     ensureResultsDirectory();
 
     const quizFilePath = path.join(
@@ -290,7 +375,13 @@ app.post("/api/save-results", (req, res) => {
       fs.writeFileSync(tcsFilePath, JSON.stringify(tcsResults, null, 2));
     }
 
-    return res.json({ ok: true, quizFilePath, aiFilePath, tcsFilePath });
+    return res.json({
+      ok: true,
+      storage: "filesystem",
+      quizFilePath,
+      aiFilePath,
+      tcsFilePath,
+    });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Failed to save result files." });
