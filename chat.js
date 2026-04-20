@@ -43,7 +43,9 @@ async function sendMessage() {
                 body: JSON.stringify({ message })
             });
             if (!response.ok) {
-                throw new Error('Erreur serveur');
+                const errorPayload = await response.json().catch(() => ({}));
+                const serverError = errorPayload.error || `HTTP ${response.status}`;
+                throw new Error(serverError);
             }
             const data = await response.json();
             const reply = data.reply || "Je n'ai pas de reponse pour le moment.";
@@ -54,7 +56,7 @@ async function sendMessage() {
             }
         } catch (error) {
             typingMessage.querySelector('p').textContent =
-                "Desole, une erreur est survenue. Reessaie dans un instant.";
+                `Desole, une erreur est survenue: ${error.message}.`;
             typingMessage.removeAttribute('data-typing');
         } finally {
             sendBtn.disabled = false;

@@ -246,7 +246,8 @@ async function callOllama({ message, context }) {
     headers,
     body: JSON.stringify({
       model: MODEL,
-      stream: true,
+      // Non-stream mode is more robust here and avoids chunk parsing failures.
+      stream: false,
       think: false,
       options: {
         temperature: 0.6,
@@ -270,24 +271,17 @@ async function callOllama({ message, context }) {
   }
 
   const rawText = await response.text();
-  let reply = "";
-  let lastPayload = null;
-
-  for (const line of rawText.split("\n")) {
-    const trimmedLine = line.trim();
-    if (!trimmedLine) continue;
-
-    try {
-      const payload = JSON.parse(trimmedLine);
-      lastPayload = payload;
-      reply += extractReplyFromOllamaPayload(payload);
-    } catch (parseError) {
-      console.error("Failed to parse Ollama stream chunk:", trimmedLine);
-    }
+  let payload = null;
+  try {
+    payload = JSON.parse(rawText);
+  } catch (parseError) {
+    console.error("Failed to parse Ollama payload:", rawText);
+    throw new Error("Invalid JSON response from Ollama.");
   }
 
+  const reply = extractReplyFromOllamaPayload(payload);
   if (!reply) {
-    console.error("Unexpected Ollama response shape:", lastPayload);
+    console.error("Unexpected Ollama response shape:", payload);
     throw new Error("No reply from Ollama.");
   }
   return reply.trim();
