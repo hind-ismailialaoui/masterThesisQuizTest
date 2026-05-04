@@ -4,6 +4,7 @@ const chatMessages = document.getElementById('chat-messages');
 const resetChatBtn = document.getElementById('reset-chat');
 
 const defaultAssistantMessage = "Hello! I am here to help, ask me your questions!";
+let chatHistory = [];
 
 function addMessage(text, isUser = false, isTyping = false) {
     const messageDiv = document.createElement('div');
@@ -40,7 +41,7 @@ async function sendMessage() {
             const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message })
+                body: JSON.stringify({ message, history: chatHistory })
             });
             if (!response.ok) {
                 const errorPayload = await response.json().catch(() => ({}));
@@ -52,6 +53,10 @@ async function sendMessage() {
             const usage = data.usage || null;
             typingMessage.querySelector('p').textContent = reply;
             typingMessage.removeAttribute('data-typing');
+            chatHistory.push(
+                { role: 'user', content: message },
+                { role: 'assistant', content: reply }
+            );
             if (window.quizSession?.recordAiInteraction) {
                 window.quizSession.recordAiInteraction(message, reply, questionNumber, usage);
             }
@@ -67,6 +72,7 @@ async function sendMessage() {
 
 function resetChat() {
     chatMessages.innerHTML = '';
+    chatHistory = [];
     addMessage(defaultAssistantMessage);
     chatInput.value = '';
 }
