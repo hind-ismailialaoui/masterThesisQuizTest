@@ -49,10 +49,11 @@ async function sendMessage() {
             }
             const data = await response.json();
             const reply = data.reply || "Je n'ai pas de reponse pour le moment.";
+            const usage = data.usage || null;
             typingMessage.querySelector('p').textContent = reply;
             typingMessage.removeAttribute('data-typing');
             if (window.quizSession?.recordAiInteraction) {
-                window.quizSession.recordAiInteraction(message, reply, questionNumber);
+                window.quizSession.recordAiInteraction(message, reply, questionNumber, usage);
             }
         } catch (error) {
             typingMessage.querySelector('p').textContent =

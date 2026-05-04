@@ -25,6 +25,9 @@ create table if not exists public.ai_interactions (
   user_input text not null,
   ia_answer text not null,
   time_spent text not null,
+  prompt_tokens integer,
+  completion_tokens integer,
+  total_tokens integer,
   created_at timestamptz not null default timezone('utc', now())
 );
 

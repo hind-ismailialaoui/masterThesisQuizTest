@@ -296,7 +296,12 @@ function getCurrentQuestionNumber() {
   return typeof currentQuestionIndex === "number" ? currentQuestionIndex + 1 : null;
 }
 
-function recordAiInteraction(userQuestion, aiAnswer, questionNumber = null) {
+function recordAiInteraction(
+  userQuestion,
+  aiAnswer,
+  questionNumber = null,
+  usage = null
+) {
   aiInteractions.push({
     user_name: participantUsername,
     session_id: sessionId,
@@ -304,6 +309,9 @@ function recordAiInteraction(userQuestion, aiAnswer, questionNumber = null) {
     question_number: questionNumber,
     ia_answer: aiAnswer,
     time: formatElapsedTime(elapsedSeconds),
+    prompt_tokens: usage?.prompt_tokens ?? null,
+    completion_tokens: usage?.completion_tokens ?? null,
+    total_tokens: usage?.total_tokens ?? null,
   });
 }
 

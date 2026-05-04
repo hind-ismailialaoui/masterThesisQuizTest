@@ -107,6 +107,9 @@ async function saveResultsToSupabase({
     user_input: item.user_input,
     ia_answer: item.ia_answer,
     time_spent: item.time,
+    prompt_tokens: item.prompt_tokens ?? null,
+    completion_tokens: item.completion_tokens ?? null,
+    total_tokens: item.total_tokens ?? null,
   }));
 
   const tcsRows = Array.isArray(tcsResults?.responses)
@@ -294,7 +297,20 @@ async function callOllama({ message, context }) {
     console.error("Unexpected Ollama response shape:", payload);
     throw new Error("No reply from Ollama.");
   }
-  return reply.trim();
+
+  const usage = {
+    prompt_tokens: payload.prompt_eval_count ?? null,
+    completion_tokens: payload.eval_count ?? null,
+    total_tokens:
+      (payload.prompt_eval_count ?? 0) + (payload.eval_count ?? 0) || null,
+  };
+
+  console.log("Ollama usage:", usage);
+
+  return {
+    reply: reply.trim(),
+    usage,
+  };
 }
 
 app.get("/api/health", (req, res) => {
@@ -313,8 +329,8 @@ app.post("/api/chat", async (req, res) => {
     // A: build the context block that will be injected into the prompt.
     const context = buildContext(matches);
     // G: generate the final reply with Ollama using the augmented prompt.
-    const reply = await callOllama({ message, context });
-    return res.json({ reply });
+    const { reply, usage } = await callOllama({ message, context });
+    return res.json({ reply, usage });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: error.message || "Server error." });
