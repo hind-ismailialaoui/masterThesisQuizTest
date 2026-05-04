@@ -31,7 +31,7 @@ const introImage = document.getElementById("intro-image");
 const introCounter = document.getElementById("intro-counter");
 
 
-const QUESTION_LIMIT = 1; //null -> all questions
+const QUESTION_LIMIT = 10; //null -> all questions
 const INTRO_IMAGES = [
   "designs/instruction1.png",
   "designs/instruction2.png",
