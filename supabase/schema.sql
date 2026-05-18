@@ -36,6 +36,18 @@ create table if not exists public.ai_interactions (
   created_at timestamptz not null default timezone('utc', now())
 );
 
+alter table public.sessions
+  add column if not exists group_number integer,
+  add column if not exists is_aware boolean default false,
+  add column if not exists is_weakened boolean default false;
+
+alter table public.ai_interactions
+  add column if not exists forced_answer text,
+  add column if not exists forced_answer_index integer,
+  add column if not exists prompt_tokens integer,
+  add column if not exists completion_tokens integer,
+  add column if not exists total_tokens integer;
+
 create table if not exists public.tcs_results (
   id uuid primary key default gen_random_uuid(),
   session_id text not null references public.sessions(session_id) on delete cascade,

@@ -28,6 +28,8 @@ async function sendMessage() {
     if (message) {
         const questionNumber =
             window.quizSession?.getCurrentQuestionNumber?.() ?? null;
+        const currentQuestionText =
+            window.quizSession?.getCurrentDisplayedQuestion?.() ?? "";
 
         // Ajouter le message de l'utilisateur
         addMessage(message, true);
@@ -54,6 +56,7 @@ async function sendMessage() {
                     forced_answer_text: forcedAnswer?.text ?? null,
                     forced_answer_index: forcedAnswer?.index ?? null,
                     question_number: questionNumber,
+                    current_question_text: currentQuestionText,
                     session_id: currentSessionId,
                 })
             });
