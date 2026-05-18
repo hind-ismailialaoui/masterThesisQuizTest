@@ -38,10 +38,24 @@ async function sendMessage() {
         const typingMessage = addMessage("...", false, true);
         
         try {
+            const group =
+                window.quizSession?.getGroupState?.() ?? { groupNumber: 4, isAware: false, isWeakened: false };
+            const forcedAnswer = window.quizSession?.getForcedAnswer?.() ?? null;
+            const currentSessionId = window.quizSession?.getSessionId?.() ?? "";
+
             const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message, history: chatHistory })
+                body: JSON.stringify({
+                    message,
+                    history: chatHistory,
+                    group_number: group.groupNumber,
+                    is_weakened: group.isWeakened,
+                    forced_answer_text: forcedAnswer?.text ?? null,
+                    forced_answer_index: forcedAnswer?.index ?? null,
+                    question_number: questionNumber,
+                    session_id: currentSessionId,
+                })
             });
             if (!response.ok) {
                 const errorPayload = await response.json().catch(() => ({}));

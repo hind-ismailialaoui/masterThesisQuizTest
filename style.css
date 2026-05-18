@@ -161,6 +161,15 @@ body {
     color: #2f3144;
 }
 
+.group-message {
+    padding: 0.9rem 1rem;
+    border: 1px solid #e4d7a7;
+    border-radius: 0.7rem;
+    background: #fff8dc;
+    color: #5a4a16;
+    font-weight: 600;
+}
+
 .username-card h2 {
     margin: 0 0 1rem;
     font-size: 1.45rem;
