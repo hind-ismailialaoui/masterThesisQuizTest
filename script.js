@@ -156,8 +156,8 @@ function updateConsentMessage() {
 
   if (groupState.isAware) {
     groupMessage.textContent = groupState.isWeakened
-      ? "Important: In this variant, the AI assistant may provide confident but intentionally incorrect answers to LSAT questions. Use the assistant as you see fit during the quiz."
-      : "Important: In this variant, the AI assistant is intended to provide correct and helpful answers to LSAT questions during the quiz.";
+      ? "Important: The AI assistant may provide incorrect answers to LSAT questions."
+      : "Important: The AI assistant is intended to provide correct and helpful answers to LSAT questions during the quiz.";
     groupMessage.classList.remove("hide");
     return;
   }
