@@ -32,7 +32,7 @@ const introImage = document.getElementById("intro-image");
 const introCounter = document.getElementById("intro-counter");
 
 
-const QUESTION_LIMIT = null; // null -> all questions
+const QUESTION_LIMIT = 10; // null -> all questions
 const GROUP_CONFIG = {
   1: { groupNumber: 1, isAware: true, isWeakened: true },
   2: { groupNumber: 2, isAware: true, isWeakened: false },
