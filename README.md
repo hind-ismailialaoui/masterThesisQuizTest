@@ -56,24 +56,24 @@ Main technologies used:
 
 The statistical analysis is provided in two formats:
 
-- `dataVisualizationsFinal.pdf`  
+- `analysis/dataVisualizationsFinal.pdf`  
   Static PDF version of the complete notebook. This file can be opened directly to read the analysis without re-running the code.
 
-- `dataVisualizationsFinal.ipynb`  
-  Executable Jupyter Notebook version. This file can be opened with Jupyter Notebook or Google Colab.
+- `analysis/dataVisualizationsFinal.ipynb`  
+  Executable Jupyter Notebook version. This file can be opened with Jupyter Notebook or Google Colab, or previewd directly on Github.
 
 ## How to Read the Analysis
 
 To inspect the complete analysis without running any code, yoy can preview:
 
 ```text
-dataVisualizationsFinal.ipynb
+analysis/dataVisualizationsFinal.ipynb
 ````
 
 or if any problem, open:
 
 ```text
-dataVisualizationsFinal.pdf
+analysis/dataVisualizationsFinal.pdf
 ````
 
 This PDF contains the data preparation, exploratory visualizations, statistical tests, and effect size calculations.
@@ -82,17 +82,17 @@ This PDF contains the data preparation, exploratory visualizations, statistical 
 
 To run the notebook:
 
-1. Open `dataVisualizationsFinal.ipynb` in Google Colab or Jupyter Notebook.
+1. Open `analysis/dataVisualizationsFinal.ipynb` in Google Colab or Jupyter Notebook.
 2. Make sure the required CSV files are available in the notebook environment.
 3. If using Google Colab, upload the CSV files to the `/content/` directory or adapt the file paths in the notebook.
 
 The notebook expects the following datasets:
 
 ```text
-sessions_rows.csv
-quiz_results_rows.csv
-tcs_results_rows.csv
-ai_interactions_rows.csv
+data/sessions_rows.csv
+data/quiz_results_rows.csv
+data/tcs_results_rows.csv
+data/ai_interactions_rows.csv
 ```
 
 These datasets correspond to:
