@@ -1,0 +1,551 @@
+id,session_id,user_name,question_number,user_answer,correct,used_ia,created_at
+005a8a64-6897-4ca8-8f0f-44b1101cbd46,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,9,It overgeneralizes from one example.,no,no,2026-05-19 07:56:00.946199+00
+009bb75d-2eb4-415f-a49f-232fbbc64386,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,3,No dogs are cats.,yes,no,2026-05-19 07:56:37.214596+00
+01228e9b-f3a6-41a9-8ff6-4e80452beaea,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:56:00.946199+00
+0166663c-9cfe-44ec-b289-81a9bc961849,4999b791-2557-4340-a9f7-8992f204f5d3,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:45:02.722149+00
+01acede1-4706-47e4-bafd-5fd8e722d9ce,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:59:47.401532+00
+01eb85fa-89e8-46c6-927e-3647cc4fd9cf,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,2,Park maintenance costs are high.,no,no,2026-05-19 08:42:51.749134+00
+02996e3b-5275-4785-aa75-357a15c69487,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:58:55.130763+00
+03edc5c1-84d8-4622-9acf-26d1fe8e6c3a,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:55:21.32315+00
+0448f039-876f-44ed-bcff-db159e0f7c0e,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:52:17.049354+00
+04eac786-e45a-4fa9-b7c1-37c47e5a18bf,24c1a71c-bf27-40ec-b997-af97053bed02,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:39:02.06296+00
+06531f22-15ce-41fe-b4e4-24893a2adbcf,4999b791-2557-4340-a9f7-8992f204f5d3,A4,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 08:45:02.722149+00
+065484bc-ac58-4f74-b273-f5dfd4f3e42b,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,4,Remote work always improves productivity.,no,no,2026-05-19 09:12:23.246213+00
+0759cdde-2569-445c-bfa2-1742edd4f5e7,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:18:51.380951+00
+076ef948-d86f-4ad2-ab64-919541fcd1ee,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:37:44.93456+00
+07750b81-1884-4b19-84d4-f583bdab7290,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,6,Alertness levels vary during the day.,no,yes,2026-05-19 08:03:38.125773+00
+07759487-3c76-4611-b6b1-ad48690b180c,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:56:00.946199+00
+07a04e0c-2a7a-48c0-810c-0a8f94549248,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:55:21.643156+00
+08023b72-b278-4a0e-9b9b-471656e09113,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,1,Sparrows can fly.,yes,yes,2026-05-19 07:20:59.703539+00
+083d8421-6f24-4aae-b3a7-5f6d016e843c,f0291424-8425-4d37-ae38-0fa2013490ee,A1,3,No dogs are cats.,yes,no,2026-05-19 07:58:13.588205+00
+08eae80d-55ed-4d25-90e9-6100c0993811,585dc200-a107-437b-944a-5d3000975b5b,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:57:28.858096+00
+0905a4d8-d66d-4ac2-8ea4-e9455cb4c3ab,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:52:17.351351+00
+0940faeb-1e3d-4185-b062-2212092b540b,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,3,No dogs are cats.,yes,no,2026-05-19 09:12:04.173877+00
+09bc5eaf-0426-4da8-8622-4460c170f6a3,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,3,No dogs are cats.,yes,no,2026-05-19 07:56:04.809418+00
+0ab0b18b-8842-42ee-b58d-d9b705f6013f,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,7,False cause,no,no,2026-05-19 07:57:40.096099+00
+0b32bdf0-5a7b-42aa-a626-4a04662f47b9,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,4,Employees dislike commuting.,no,no,2026-05-19 07:56:37.214596+00
+0c59bb55-78e4-4f8c-8a88-ba80482cf8d3,7d2e90ac-7043-4214-8fbc-83257b410321,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:47:55.532812+00
+0c8a5cca-e990-40c9-b306-c5df852db3aa,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:50:42.000239+00
+0d8a6d7a-9a19-4ac0-942a-f076a7c7c492,4999b791-2557-4340-a9f7-8992f204f5d3,A4,1,Some birds cannot fly.,no,no,2026-05-19 08:45:02.722149+00
+0db3fb4a-f653-450c-bcc4-f259dc460e74,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,1,Sparrows can fly.,yes,no,2026-05-19 08:42:51.749134+00
+0dc1b972-4ca0-42c6-88eb-2a172aeb13b8,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:42:45.547456+00
+0ddffc2d-ec36-4c7e-84da-ce505b236da6,24c1a71c-bf27-40ec-b997-af97053bed02,A4,6,Many people like the taste of coffee.,no,no,2026-05-19 08:39:02.06296+00
+0e3b525a-45b5-49a8-903d-c068ae6bd194,7d2e90ac-7043-4214-8fbc-83257b410321,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:47:55.532812+00
+0edcd9a7-9971-4bf1-ad5f-1c2128c9825c,44171929-c92d-479f-9750-18609fb745cf,A1,5,It assumes cause and effect are the same.,no,no,2026-05-19 07:54:01.808888+00
+0ef9d27e-8d8b-4b62-be30-63276fb97aab,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:14:38.835077+00
+0f2d5a9c-cb63-4fa5-a87c-c58cc619481e,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:20:59.703539+00
+0f446ae3-4934-4cca-857e-2f7d8249a6eb,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,4,Remote work always improves productivity.,no,no,2026-05-19 07:53:24.321975+00
+0fdecec0-70d5-48e1-8405-a40f5db857d9,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,3,No dogs are cats.,yes,no,2026-05-19 08:42:51.749134+00
+100fa778-6407-4f9a-9e9e-19b35129ba8f,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:52:17.049354+00
+10784106-33f7-4dfe-99a0-72579d6e0446,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,7,Circular reasoning,yes,no,2026-05-19 07:53:24.321975+00
+109d95ff-0307-4f25-92c5-708229e28139,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,6,Coffee drinking is a common habit.,no,no,2026-05-19 09:13:07.832081+00
+113d4bc6-bb10-442f-8e81-2d4a5a817369,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:54:22.248117+00
+118ffefe-0d33-4310-956b-8d1f67029b85,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,8,"If school does not close, then it did not snow.",yes,yes,2026-05-19 07:16:00.536052+00
+11d9b7e4-ba74-47f0-ac41-26a58af60058,b368709d-4158-4f75-a154-e8265b07bf09,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:49:57.370819+00
+11f3c32e-91d4-4987-a59c-c56427968971,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,3,No dogs are cats.,yes,no,2026-05-19 07:20:59.703539+00
+12320f36-b87b-4f72-89e3-6b2c36e7beb5,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:21:46.720145+00
+12904814-853b-41d4-83b0-f1bbd8047b36,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,3,No dogs are cats.,yes,yes,2026-05-19 08:03:38.125773+00
+1365b20c-7832-4640-b176-d0af1f7e9f16,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,1,Sparrows can fly.,yes,no,2026-05-19 08:03:46.362023+00
+13de8103-b10b-4022-a647-4bcca1899823,96b927a7-50be-4220-a0a7-902cf3082280,A4,2,Crime rates are higher in cities with fewer green spaces.,no,yes,2026-05-19 08:36:42.060131+00
+141bb4a4-d9a1-4860-abc0-0ca2e40ad629,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,1,Sparrows can fly.,yes,no,2026-05-19 09:08:50.303053+00
+1514a7fe-886d-4afa-bbd2-36e46a9ec477,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:56:04.809418+00
+15e376df-d971-4bfd-9d66-c07e48cbc6b3,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:50:42.000239+00
+15ea7271-b93c-430a-834b-dda2c28f494b,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,1,Sparrows can fly.,yes,no,2026-05-19 09:13:07.832081+00
+1668592f-e52d-4773-bfe1-a5a5a43bb948,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 08:32:54.670588+00
+1676028f-6eb4-437e-bc40-62bd749aaa4a,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:20:59.703539+00
+16aef28f-f941-42b7-8078-21e4ba91e4d2,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,6,People who are naturally alert are more likely to drink coffee.,yes,yes,2026-05-19 07:15:32.262252+00
+17387392-954a-4fdd-ac6c-7b6d8df8b6d7,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,5,It ignores other factors.,no,no,2026-05-19 07:56:04.809418+00
+17453bc7-dd35-435e-b9de-c81bfa6c1395,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,9,It draws a false analogy.,no,no,2026-05-19 07:55:21.643156+00
+17ac7ed2-7a2d-4eb3-892d-094c1f69338e,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 08:03:46.362023+00
+182c291e-a105-4b56-9248-da4637b2b47d,96b927a7-50be-4220-a0a7-902cf3082280,A4,3,No dogs are cats.,yes,yes,2026-05-19 08:36:42.060131+00
+1933884d-9b2f-4cbc-8747-eab153f28369,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:03:46.362023+00
+1a10634b-84fe-411f-b5fd-ad45e2544dd6,96b927a7-50be-4220-a0a7-902cf3082280,A4,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 08:36:42.060131+00
+1b048b99-3b63-4107-9074-875e236d1306,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:55:43.793712+00
+1beaddf8-9fa8-4a4f-a9e5-3075fdd0ede2,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:37:44.93456+00
+1c23e91d-084c-4112-9a45-684f65b3842a,03641a2a-2247-4f8b-9635-87d4057f9922,A5,7,Circular reasoning,yes,yes,2026-05-19 07:19:08.142467+00
+1c840297-6c67-49b1-b61d-3ac73594e595,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 09:12:04.173877+00
+1d970b5b-ac17-4263-bdcf-4a957fa009e7,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:49:38.370526+00
+1e27de01-39a9-4d86-9034-b697b6990509,4999b791-2557-4340-a9f7-8992f204f5d3,A4,3,Some mammals are dogs.,no,yes,2026-05-19 08:45:02.722149+00
+1e62aa38-593d-429a-82d9-fe2097590b50,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:55:21.643156+00
+1f80047a-4afe-46f5-9ae8-07407f10f122,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:55:34.080719+00
+204f6e5a-848d-4930-8a36-c47655d2ffd2,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,10,"Invalid, because creativity is unrelated to athletics.",no,yes,2026-05-19 07:14:38.835077+00
+206b09e7-e925-4d81-925f-9452b2720afa,24c1a71c-bf27-40ec-b997-af97053bed02,A4,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:39:02.06296+00
+20762cb8-72c4-4a57-8237-54397cdaa8db,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:58:55.130763+00
+208bba8d-4237-49f1-9840-e1669f462a25,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:53:24.321975+00
+2187fcdf-fbfd-4ee7-b802-3e29dc7d35ac,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,4,Happiness and productivity are linked.,yes,no,2026-05-19 09:13:07.832081+00
+22648ea7-ec26-4017-aec5-c6f092f233e2,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 07:55:21.643156+00
+22818c7d-8ed9-4db7-a552-9282c093f527,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:15:32.262252+00
+22cd754c-ff89-4f41-81f2-275447471cea,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,7,Straw man,no,yes,2026-05-19 07:21:46.720145+00
+23209637-0e9f-4797-8d3a-35cff7278d38,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,1,Sparrows can fly.,yes,no,2026-05-19 09:14:13.458736+00
+23545344-a9cc-4260-85bd-0c0c8445b954,4999b791-2557-4340-a9f7-8992f204f5d3,A4,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 08:45:02.722149+00
+23735b88-795a-450b-b1d9-3a0ae673cf63,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,3,No dogs are cats.,yes,no,2026-05-19 07:19:42.003235+00
+23f57884-4ee4-4f31-8226-24599a5a2852,44171929-c92d-479f-9750-18609fb745cf,A1,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 07:54:01.808888+00
+248fc70e-b403-4533-93df-e0255d394e5d,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:55:34.080719+00
+24e12e9c-e051-4f92-a681-7d68949721d8,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,2,Park maintenance costs are high.,no,yes,2026-05-19 08:03:38.125773+00
+25241255-79e5-4e59-9475-10c2d84a95bc,24c1a71c-bf27-40ec-b997-af97053bed02,A4,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 08:39:02.06296+00
+25722808-be7a-42ff-906c-6405d8817745,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,8,"If school does not close, then it did not snow.",yes,yes,2026-05-19 07:21:31.665783+00
+25d5d6b4-4ddc-4f7f-bdbd-ac80afce40c8,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,5,It assumes cause and effect are the same.,no,no,2026-05-19 07:55:48.043002+00
+25f6e47d-f17f-4881-abd3-d9053bd863ed,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:53:24.321975+00
+263c1e12-8a5a-4a4f-82fb-3d1fd16c0aa2,f0291424-8425-4d37-ae38-0fa2013490ee,A1,8,School will never close unless it snows.,no,no,2026-05-19 07:58:13.588205+00
+26766c86-ba7f-4d0e-a529-5d529d274149,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,7,Circular reasoning,yes,no,2026-05-19 07:53:11.368584+00
+270f3ecc-6777-4879-b321-f39ad8c27cbc,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:56:00.946199+00
+2765e4e2-35b4-4a8c-8ea0-04de11c64cbb,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 09:12:23.246213+00
+27ec8e95-9303-4b83-8346-6fd444a058a4,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:16:00.536052+00
+286a8e3b-82da-4ef6-a568-47e100cd1583,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,6,Alertness levels vary during the day.,no,no,2026-05-19 09:12:04.173877+00
+28af644f-4aa8-44b5-9d52-23eaa070e5f3,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:55:48.043002+00
+295c5055-d0eb-4af2-a0fd-d809c1f23d59,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,8,"If school closes, it snowed.",no,yes,2026-05-19 07:15:32.262252+00
+29639e9b-bc71-4f4e-9253-d7e695ad7abe,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 09:08:50.303053+00
+29c7be57-f951-4ce2-828d-97d0d432f28f,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,7,False cause,no,no,2026-05-19 08:34:54.191985+00
+29cc4534-c076-449d-8597-875408f33521,2fae3989-3440-4447-ac66-393260291e96,A4,7,Circular reasoning,yes,yes,2026-05-19 08:41:08.657143+00
+29ec1b99-b816-4112-b358-b6ff5ea9aa65,585dc200-a107-437b-944a-5d3000975b5b,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:57:28.858096+00
+2af466ac-59b8-45e0-bb22-d1ea9557a445,03641a2a-2247-4f8b-9635-87d4057f9922,A5,1,Sparrows can fly.,yes,yes,2026-05-19 07:19:08.142467+00
+2b1a5138-7d6d-4199-8cbc-300e9fde3a30,7d2e90ac-7043-4214-8fbc-83257b410321,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:47:55.532812+00
+2b481d37-3f49-44c5-977b-f6b17789df7e,585dc200-a107-437b-944a-5d3000975b5b,A1,3,No dogs are cats.,yes,no,2026-05-19 07:57:28.858096+00
+2b97c083-e3e7-44ef-913a-0b3e253e7b06,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,1,Sparrows can fly.,yes,no,2026-05-19 07:18:51.380951+00
+2c74ecc3-8305-4c77-8e35-8b72182ad604,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,5,It assumes cause and effect are the same.,no,no,2026-05-19 07:56:08.8175+00
+2cb17cae-5727-4fed-9abb-f996a219362a,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,4,Employees will have access to reliable internet at home.,no,no,2026-05-19 08:37:44.93456+00
+2cd7f381-45e3-4770-b84a-cb879268dd71,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,1,All birds are sparrows.,no,no,2026-05-19 08:42:45.547456+00
+2dc1811a-4398-43f0-a343-6be76626b217,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,7,Circular reasoning,yes,no,2026-05-19 07:58:55.130763+00
+2e4e8efe-a72c-418f-a0a2-bd3c13194855,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,4,Happiness and productivity are linked.,yes,yes,2026-05-19 07:55:30.16724+00
+301b1219-55b3-44c6-85c2-abd29a0c741e,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:56:00.946199+00
+31736a2f-2c95-4fd7-93f7-3f4b88998841,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 09:13:13.099157+00
+31cb31af-3781-464f-8d6a-5583eaf5c7a0,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:21:46.720145+00
+31cfe5bc-83cc-40e6-91c8-448b41d8c7c0,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 07:56:04.809418+00
+321c4fdd-d36d-4e43-8fcd-cf12053f8aef,03641a2a-2247-4f8b-9635-87d4057f9922,A5,4,Happiness and productivity are linked.,yes,yes,2026-05-19 07:19:08.142467+00
+322b4947-bdd3-47d3-87c1-cf28bf17f636,7d2e90ac-7043-4214-8fbc-83257b410321,A1,3,No dogs are cats.,yes,no,2026-05-19 07:47:55.532812+00
+3242df84-aed7-478a-adce-076cd1f4a9f3,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,4,Employees dislike commuting.,no,no,2026-05-19 07:55:43.793712+00
+32440707-9952-4ce0-8431-0215fdf8ebd9,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,9,It overgeneralizes from one example.,no,no,2026-05-19 07:50:42.000239+00
+324c4415-da57-490f-a6f0-61b2893d0f38,03641a2a-2247-4f8b-9635-87d4057f9922,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,yes,2026-05-19 07:19:08.142467+00
+32a617a1-230d-47ba-b1a7-0afa8c992a4f,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,1,Sparrows can fly.,yes,no,2026-05-19 07:16:00.536052+00
+330a454d-8127-4a5d-a204-d84256e4a0e5,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,1,Sparrows can fly.,yes,yes,2026-05-19 08:34:54.191985+00
+3369dd66-90a0-4cbf-9660-cbe21072ca45,585dc200-a107-437b-944a-5d3000975b5b,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:57:28.858096+00
+33851170-692d-47d3-9ea2-f86c5ec1bb8a,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,3,No dogs are cats.,yes,no,2026-05-19 07:55:21.643156+00
+33ce021e-b0f5-4893-8c17-cc49a6bdc953,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,4,Happiness and productivity are linked.,yes,yes,2026-05-19 07:15:32.262252+00
+34434612-a38f-4cf9-a10e-e8b4687baade,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:58:55.130763+00
+349897a4-5b78-45bf-9f79-1a579f1c05fa,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,2,Crime rates are higher in cities with fewer green spaces.,no,yes,2026-05-19 07:15:32.262252+00
+351e8ba2-d429-422e-bac4-529f75c7822b,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:53:11.368584+00
+3585c546-a504-4202-8524-9ffa42bb8c0f,96b927a7-50be-4220-a0a7-902cf3082280,A4,5,It assumes cause and effect are the same.,no,yes,2026-05-19 08:36:42.060131+00
+35ab96f9-d96a-4661-9ce2-bf48918d72be,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,4,Remote work always improves productivity.,no,yes,2026-05-19 07:52:17.351351+00
+35f85629-4351-4310-bc51-e1daf36b8e05,b368709d-4158-4f75-a154-e8265b07bf09,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:49:57.370819+00
+36a40f59-480a-4ebf-8c3a-4cec8b4f60fb,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:21:46.720145+00
+36bdcfde-94fd-4fc5-91a3-7ec0fac1327e,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,7,Circular reasoning,yes,yes,2026-05-19 08:03:38.125773+00
+3757ae7f-4464-46c9-93ea-c4b00cd6f0eb,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,1,Sparrows can fly.,yes,no,2026-05-19 07:21:31.665783+00
+393fb95d-18fa-42fb-97fc-2f7a4b978795,7d2e90ac-7043-4214-8fbc-83257b410321,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:47:55.532812+00
+398fc802-9cbf-48cd-99f7-785d5dced2c9,585dc200-a107-437b-944a-5d3000975b5b,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:57:28.858096+00
+3a5e5d54-749f-463b-b7d9-e9319e7efe92,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,3,No dogs are cats.,yes,no,2026-05-19 07:55:21.32315+00
+3cb4367c-5950-4e1f-8d14-fb28fd1e7c36,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 07:51:27.849817+00
+3d05308f-58eb-4129-ab8d-6200b68e3496,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,5,It assumes cause and effect are the same.,no,yes,2026-05-19 07:15:32.262252+00
+3d31a96f-26d9-4b29-8d78-4793b1ec52d7,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,6,Alertness levels vary during the day.,no,yes,2026-05-19 07:56:37.214596+00
+3d4abdd8-b364-449c-ac02-de4c9b768c4f,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,2,Some parks are located in unsafe areas.,no,no,2026-05-19 07:56:37.214596+00
+3d7ccdeb-2f3e-425d-8640-c628d8cc3dca,03641a2a-2247-4f8b-9635-87d4057f9922,A5,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:19:08.142467+00
+3de057f7-5910-4798-8bbc-67ba87cfa353,03641a2a-2247-4f8b-9635-87d4057f9922,A5,3,No dogs are cats.,yes,yes,2026-05-19 07:19:08.142467+00
+3e3c40ec-ee89-467a-8a47-ff3ff5f33fc2,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:56:37.214596+00
+3e6c0178-92e6-4e51-bb84-037edf3f8d94,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:51:27.849817+00
+3eb0deba-db26-4a9e-b297-cf6d1d3f6a63,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,7,False dilemma,no,no,2026-05-19 07:55:21.643156+00
+3f351c44-527b-450a-ab69-8adcc3044a97,f0291424-8425-4d37-ae38-0fa2013490ee,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:58:13.588205+00
+3fb731dc-96f6-4793-891e-11eae9b56fbd,24c1a71c-bf27-40ec-b997-af97053bed02,A4,3,No dogs are cats.,yes,no,2026-05-19 08:39:02.06296+00
+3fd222f9-4034-47dc-b946-8fa5a0790a79,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 08:37:44.93456+00
+40e4a27c-51e3-4299-8916-4f17599e5719,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:52:17.049354+00
+4178c750-8ff7-4b8a-99eb-ed2c21a7e407,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 07:21:31.665783+00
+41cf262a-6641-44a0-ae8b-bf406dafd627,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 09:13:13.099157+00
+424515d6-bf4e-4793-8541-21fbe415b2a2,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,4,Remote work always improves productivity.,no,no,2026-05-19 07:53:11.368584+00
+42f1c949-76dd-46ea-8c02-7ba62ff226d7,2fae3989-3440-4447-ac66-393260291e96,A4,6,Coffee drinking is a common habit.,no,no,2026-05-19 08:41:08.657143+00
+430c6a37-a6ea-428b-8fd9-6508375f6c40,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,3,No dogs are cats.,yes,no,2026-05-19 09:12:23.246213+00
+4362a3e9-1f53-4360-aacf-a28edfcd1bf4,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:53:08.539112+00
+4381a822-9d19-48ba-b11e-af2f3ffd6e7b,b368709d-4158-4f75-a154-e8265b07bf09,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:49:57.370819+00
+43de219b-f361-4ec5-a6d8-e835e4046b2b,33217776-d590-4192-910d-090dba139669,A1,5,It assumes James went to culinary school.,no,no,2026-05-19 07:50:41.668092+00
+440f417e-7ee4-4848-9665-d448271b8f9a,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:18:51.380951+00
+441662ea-3de5-49c6-bfbe-59931763a8ed,96b927a7-50be-4220-a0a7-902cf3082280,A4,8,"If school closes, it snowed.",no,no,2026-05-19 08:36:42.060131+00
+4499bd85-a0cc-4725-8159-d0dc6ac3282f,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,9,It overgeneralizes from one example.,no,no,2026-05-19 07:57:40.096099+00
+44b2234d-d348-426f-94a9-ec8e63b405e9,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,7,Circular reasoning,yes,no,2026-05-19 08:32:54.670588+00
+44e8c2ab-0908-470e-a344-40858de890c4,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:38:47.661139+00
+45fd1a0e-5faf-4b68-a874-4f072be9705c,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,9,It draws a false analogy.,no,no,2026-05-19 07:56:04.809418+00
+46efb5ba-5889-41c0-8bbb-b5fbaab2f9ec,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,3,No dogs are cats.,yes,no,2026-05-19 07:59:47.401532+00
+48993695-60d7-4c90-b3ec-bb4a84c20661,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:19:42.003235+00
+48dfaba9-89e6-4802-a290-ad6102cf1763,7d2e90ac-7043-4214-8fbc-83257b410321,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:47:55.532812+00
+49821bd3-b398-4671-9c96-dd308986cf5e,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,6,People who are naturally alert are more likely to drink coffee.,yes,yes,2026-05-19 07:14:38.835077+00
+49f97acf-09cf-4ec2-bd0f-1e830c4b8c7c,585dc200-a107-437b-944a-5d3000975b5b,A1,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 07:57:28.858096+00
+4b496fff-3340-441d-9ec3-0f6d395541a6,03641a2a-2247-4f8b-9635-87d4057f9922,A5,5,It confuses necessary and sufficient conditions.,yes,yes,2026-05-19 07:19:08.142467+00
+4cb0a7ac-aef2-406c-8fc0-b755350bce52,44171929-c92d-479f-9750-18609fb745cf,A1,7,Circular reasoning,yes,no,2026-05-19 07:54:01.808888+00
+4d3c40f7-35d9-4be4-9dae-e9e09173477e,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,8,School closes if and only if it snows.,no,no,2026-05-19 07:55:43.793712+00
+4daa04ea-2c97-45b3-91bd-08765974f297,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,2,Parks provide places for people to gather.,no,no,2026-05-19 07:54:22.248117+00
+4e22b038-ac45-4cde-b6e0-b422ce8095d1,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,4,Happiness and productivity are linked.,yes,no,2026-05-19 09:14:13.458736+00
+4f11e505-182d-48ff-846d-37e2206108f1,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,4,Happiness and productivity are linked.,yes,no,2026-05-19 09:13:13.099157+00
+50b80b9e-57f6-413a-ab40-29b8f0f6cd64,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:55:48.043002+00
+513ed403-7035-490d-8863-41f1916fc9d8,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:03:46.362023+00
+52114a47-3740-4890-bb54-1d5b4094b65f,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,3,No dogs are cats.,yes,no,2026-05-19 07:56:00.946199+00
+52293a1a-b332-451c-858d-5aecb7d41dda,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:52:17.351351+00
+527fe398-a18b-44a3-a087-8d2bb303e688,7d2e90ac-7043-4214-8fbc-83257b410321,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:47:55.532812+00
+5295e0db-15df-421a-94aa-a740d7abb3ad,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:51:27.849817+00
+530d2987-6e18-446f-9f90-359a1e90b3eb,b368709d-4158-4f75-a154-e8265b07bf09,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,yes,2026-05-19 07:49:57.370819+00
+5330cff7-3621-4394-91b4-de0c2b0efe45,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,5,It assumes cause and effect are the same.,no,no,2026-05-19 07:54:22.248117+00
+53d1f4b0-1ce4-4917-9125-d757bef28416,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:50:42.000239+00
+53efe846-9cd3-4f9f-b8b5-21efc3774317,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,8,School closes if and only if it snows.,no,no,2026-05-19 07:18:51.380951+00
+54290376-1918-4526-93cf-1b822d21f103,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:16:00.536052+00
+54363f38-027e-4630-88c6-474f3c8f18a4,24c1a71c-bf27-40ec-b997-af97053bed02,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:39:02.06296+00
+54e753e1-2302-4f00-a91c-311d28c6cd3b,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:53:08.539112+00
+5594acb6-cc9f-49b1-9c9a-0c91b03025b4,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,8,School closes if and only if it snows.,no,no,2026-05-19 09:13:13.099157+00
+591cfdca-b6c3-4552-a41b-6da33288c5a2,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,9,It overgeneralizes from one example.,no,yes,2026-05-19 08:03:38.125773+00
+591f62f8-46e7-401a-9a5d-bdb0af87dec4,2fae3989-3440-4447-ac66-393260291e96,A4,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 08:41:08.657143+00
+5931bd69-183b-4c3d-b196-f737d70761ad,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:19:42.003235+00
+59621fbf-523e-448d-9365-3d69f8a70b56,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:51:27.849817+00
+59645687-3bc5-4b6d-9448-194fb0efa79e,585dc200-a107-437b-944a-5d3000975b5b,A1,2,Parks provide places for people to gather.,no,no,2026-05-19 07:57:28.858096+00
+5a0e5250-6ddc-4826-b830-66c3087b8fad,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:55:34.080719+00
+5ba89202-6f83-4a09-8fce-611307f2fb9f,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:54:22.248117+00
+5c0f28f4-5e52-4cd5-a76d-e1729d226a2f,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 09:12:04.173877+00
+5c7d7306-56bf-496e-825e-fda2a3736eae,585dc200-a107-437b-944a-5d3000975b5b,A1,7,Circular reasoning,yes,yes,2026-05-19 07:57:28.858096+00
+5c7efd44-a81c-4db1-87e7-b82bd49db2c8,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 09:12:23.246213+00
+5d869e76-5b10-484a-9ebb-c6072bf4ae2a,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,3,No dogs are cats.,yes,no,2026-05-19 07:53:08.539112+00
+5e056e8c-27ea-4320-ae52-2cf758b28bb7,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 09:12:04.173877+00
+60578d3a-d42f-4ce6-97f2-7b2bd3f069ab,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:20:59.703539+00
+605a773c-8592-4ade-b0c0-a9c362c4b356,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,4,Employees will have access to reliable internet at home.,no,yes,2026-05-19 08:32:54.670588+00
+60619005-efcd-4f26-be6c-22248f81962e,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:53:24.321975+00
+611941b6-af21-4e5a-aa7b-8b5fe85c787c,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 08:03:46.362023+00
+620e5fee-62b0-4718-9d89-4c69d023ae28,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:19:42.003235+00
+63316c56-8ae3-4d5b-b5f9-6189e5359dc3,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:55:21.32315+00
+6356b898-c7c5-4593-85e3-d66f5751c053,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,8,School will never close unless it snows.,no,no,2026-05-19 07:57:40.096099+00
+63ba089f-4d5b-42ef-8171-4671a86bd277,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,5,It assumes cause and effect are the same.,no,no,2026-05-19 07:49:38.370526+00
+64037938-00b8-4364-a507-bc26709e65a5,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:56:08.8175+00
+6427f6a9-709d-408b-aca9-4c9e035ccf83,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,5,It assumes cause and effect are the same.,no,no,2026-05-19 07:20:59.703539+00
+645381f7-7da0-4c3d-a436-bc2fbfda793c,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,1,All birds are sparrows.,no,yes,2026-05-19 07:55:43.793712+00
+648ef818-bfd2-4e33-b11c-f62d0a87a63f,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,3,No dogs are cats.,yes,yes,2026-05-19 08:34:54.191985+00
+64e19df8-a846-46b8-a3c8-629457d429c8,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,3,No dogs are cats.,yes,no,2026-05-19 09:13:13.099157+00
+65a5132e-03e0-4fc1-9ff3-1785f5425aa2,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:57:40.096099+00
+65aaa339-89b0-4f04-8171-aa786bf3944b,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,5,It confuses necessary and sufficient conditions.,yes,yes,2026-05-19 07:21:31.665783+00
+65ede866-47b9-4226-b540-dd52d8e05a60,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:57:40.096099+00
+65fc411f-9fd5-4aad-8e78-2900b3e5a037,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 07:54:22.248117+00
+66b5c2f0-5b0e-420f-b24f-79cca49e80c7,2fae3989-3440-4447-ac66-393260291e96,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:41:08.657143+00
+66bd60ab-8968-4b83-a8b6-514c9ae5287c,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,7,Circular reasoning,yes,no,2026-05-19 07:59:47.401532+00
+670a9688-5fdd-4550-aafc-697704f53355,24c1a71c-bf27-40ec-b997-af97053bed02,A4,2,Some parks are located in unsafe areas.,no,no,2026-05-19 08:39:02.06296+00
+6732bae8-a4ac-4aa3-bfc7-658f995f7bad,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:52:17.351351+00
+68743dba-3b68-4357-a5bc-da78c685efd4,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:55:48.043002+00
+6884495f-3a47-4c12-b150-9ab485d649cd,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:49:38.370526+00
+688e475b-be78-4a17-83e0-df3c14613df4,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,1,Sparrows can fly.,yes,no,2026-05-19 07:21:46.720145+00
+68ac2054-9d68-40c4-84f3-0a37181b6571,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,7,Straw man,no,yes,2026-05-19 07:56:08.8175+00
+68b25f40-7096-4af6-a33e-822f487a608b,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:55:21.32315+00
+699cbc02-6bbb-4f65-811a-596743a5f07a,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:49:38.370526+00
+6c41287e-7682-45b0-94db-797d47622c1c,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,3,No dogs are cats.,yes,no,2026-05-19 07:52:17.049354+00
+6c78ef3a-4e4f-4bd4-bfe8-bec737db302e,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:55:21.643156+00
+6c95f116-2619-4b19-9b69-a0738d738163,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 08:34:54.191985+00
+6caaafa6-d931-482b-84de-b8355f98e9d8,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,3,No dogs are cats.,yes,no,2026-05-19 07:21:46.720145+00
+6d48ab94-d3fa-4fc1-86a2-1bbe8be1543c,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,3,No dogs are cats.,yes,no,2026-05-19 09:08:50.303053+00
+6ed7b22a-2491-4e7b-bb37-0b0473ca0da8,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:56:08.8175+00
+6edf0436-fbf8-4c65-9289-a9899da0aa8d,585dc200-a107-437b-944a-5d3000975b5b,A1,4,Employees dislike commuting.,no,no,2026-05-19 07:57:28.858096+00
+6fd0d46c-9f6c-4b3e-a1d2-355842ea357e,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:38:47.661139+00
+6ff3e70c-0d04-4fae-98a2-8543fe8fa2d1,96b927a7-50be-4220-a0a7-902cf3082280,A4,1,Sparrows can fly.,yes,yes,2026-05-19 08:36:42.060131+00
+709148b8-e68b-410c-a402-490dc0dc7bbf,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:42:51.749134+00
+70b3531e-4188-4822-b30e-28cd5e4eacea,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:51:27.849817+00
+70cb5cb7-4c1e-4c6c-a6d6-24be2f0ea99c,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:49:38.370526+00
+714f0af7-8eaa-4574-be77-db1492d8d1aa,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,3,No dogs are cats.,yes,no,2026-05-19 07:56:08.8175+00
+7217c595-2cd8-4150-b0e1-d826fe8e1755,7d2e90ac-7043-4214-8fbc-83257b410321,A1,4,Employees will have access to reliable internet at home.,no,no,2026-05-19 07:47:55.532812+00
+7230210a-412f-43a4-a6c0-054ff8245397,b368709d-4158-4f75-a154-e8265b07bf09,A1,8,"If school closes, it snowed.",no,yes,2026-05-19 07:49:57.370819+00
+72dd0681-2215-4a99-a6eb-9af37f16cace,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:19:42.003235+00
+72f07fac-a69d-4208-b309-bb94a846cdea,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:59:47.401532+00
+7349a398-730a-4cc8-9dd4-fadf662bf402,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,7,False cause,no,yes,2026-05-19 07:15:32.262252+00
+73985485-2887-4d63-9758-34597e4de243,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,7,Ad hominem,no,no,2026-05-19 07:55:43.793712+00
+73d44fb7-6cd0-4938-a237-1b1b76e14eaf,4999b791-2557-4340-a9f7-8992f204f5d3,A4,8,School will never close unless it snows.,no,no,2026-05-19 08:45:02.722149+00
+74966ede-187c-4e20-a67a-5eb9bfeda704,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:56:37.214596+00
+7514b8ae-c72f-4bc0-9daf-23d98e0f5ccd,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,7,False cause,no,no,2026-05-19 08:37:44.93456+00
+7523c727-0862-482e-97d6-d3d14e71df5e,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 09:12:23.246213+00
+75295ef7-b21b-4359-bf94-fd071f14a7aa,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,6,"Coffee contains caffeine, a stimulant.",no,yes,2026-05-19 07:55:30.16724+00
+7579bd4d-efce-41cb-b1c4-f3ae032ffc3a,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,7,Ad hominem,no,yes,2026-05-19 09:14:13.458736+00
+75caf5a1-991c-4421-848c-ac64f1cf0085,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:55:21.32315+00
+767a2844-e023-438b-abdd-af4f9b5d4d3c,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:19:42.003235+00
+768b1744-ab39-4b65-b3f2-bae4d11661f6,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,4,Employees dislike commuting.,no,no,2026-05-19 07:58:55.130763+00
+77754e1b-6a2d-4109-824f-cd3524a967c3,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:52:17.049354+00
+77dafc6e-1403-4452-b389-9216f071bde9,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,1,Some birds cannot fly.,no,no,2026-05-19 07:53:11.368584+00
+79b18dd1-5588-46e0-aeca-1378f553de43,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:56:04.809418+00
+79e9eef9-6c05-494e-8f2a-26c736f61961,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,3,No dogs are cats.,yes,yes,2026-05-19 08:32:54.670588+00
+7a5756d4-6825-4216-94bf-88067ded1e52,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,4,Happiness and productivity are linked.,yes,no,2026-05-19 09:12:04.173877+00
+7a83f9a6-46f5-434f-86bd-a7c923df49f3,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,4,Happiness and productivity are linked.,yes,yes,2026-05-19 08:03:38.125773+00
+7a8aa022-ee5e-4e38-b6b9-b6ebca1557b7,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,8,"If school closes, it snowed.",no,no,2026-05-19 08:42:45.547456+00
+7ab790a2-b9c9-47d0-9fc4-0e00216b9089,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:32:54.670588+00
+7ae8d004-dd62-4e15-84d2-41908ad92bfc,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,3,All dogs are cats.,no,yes,2026-05-19 07:55:30.16724+00
+7af295b0-2def-4ad1-9b0a-789f6fca38cf,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,9,It overgeneralizes from one example.,no,no,2026-05-19 07:56:37.214596+00
+7b2a0bc9-42d5-4e4a-8923-4ba9d401b21e,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:56:08.8175+00
+7b7803b2-1cc8-4482-afe6-04386eba7c1d,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,7,Circular reasoning,yes,yes,2026-05-19 07:55:30.16724+00
+7ba52e3f-adef-4ce6-bbbf-a3b0e9a4ff12,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:18:51.380951+00
+7c17f465-567d-46c2-aaf1-2e46d73b0b6d,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:52:17.351351+00
+7c7cb85b-5c94-4fc6-b9eb-692d1fe581b9,b368709d-4158-4f75-a154-e8265b07bf09,A1,9,It overgeneralizes from one example.,no,yes,2026-05-19 07:49:57.370819+00
+7cc390ab-0683-4825-99b6-abfb6a60a458,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,1,Sparrows can fly.,yes,no,2026-05-19 08:37:44.93456+00
+7d3b09bf-22d6-4579-9211-1a4d804f449a,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,9,It appeals to authority.,no,no,2026-05-19 09:13:13.099157+00
+7d3d8517-dce9-46fe-93f5-69373ad7f600,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,7,Circular reasoning,yes,no,2026-05-19 07:18:51.380951+00
+7ea6382d-a33f-4eb5-baed-876c8226dfe7,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,10,"Invalid, because not all athletes are musicians.",no,no,2026-05-19 09:12:23.246213+00
+7f3a7e3b-f487-40ed-a408-73d67e899add,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:38:47.661139+00
+80d94b91-5e10-4068-8b54-b936654dc096,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 08:38:47.661139+00
+81c047c6-cbe4-427e-9e55-9c8a85b2cd72,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:16:00.536052+00
+829a0c84-9921-482b-8eda-8fc8d789f0a9,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,yes,2026-05-19 08:03:38.125773+00
+82a458e4-075c-4a0b-b37e-d72124448b05,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 08:34:54.191985+00
+82c00aea-b9bd-4645-ac40-a5645bcd5db3,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:55:21.32315+00
+83322452-a744-4e6a-8e82-8f5b506a68e4,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:54:22.248117+00
+84af2cc2-8f15-4ffb-b8e4-836c22a5309f,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,7,False cause,no,no,2026-05-19 07:20:59.703539+00
+84c1798a-49e2-4c8c-8633-cdb34ed03a1e,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,7,False cause,no,no,2026-05-19 09:13:07.832081+00
+84d50b20-d1e5-4dc0-a90e-d3a1b943a5ca,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:58:55.130763+00
+84e9ac08-0ab4-4711-b5de-b596e4e4e040,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,5,It ignores other factors.,no,no,2026-05-19 07:58:55.130763+00
+859b3b46-e0ef-4f25-9c6c-1b2dfb5aa11d,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:57:40.096099+00
+859d08c4-be0e-44dd-acbb-2968e97f7da5,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,7,Ad hominem,no,no,2026-05-19 09:13:13.099157+00
+85db28e3-f6f8-4b39-9562-85aa5433c6cf,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:55:48.043002+00
+8627991f-c876-4543-b65e-04d6cc71f6af,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:52:17.049354+00
+8695ebcd-11b8-4407-99bd-cf37f8238828,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:56:08.8175+00
+869a8939-01c5-4eeb-ab91-17c2b1250088,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:56:04.809418+00
+8725752c-2b4e-4209-b75c-41a562f236d1,4999b791-2557-4340-a9f7-8992f204f5d3,A4,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 08:45:02.722149+00
+873bbd30-8439-42c9-9744-a676582e9804,f0291424-8425-4d37-ae38-0fa2013490ee,A1,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 07:58:13.588205+00
+874dd17b-7a53-47a3-9f35-7c076aeaf27a,33217776-d590-4192-910d-090dba139669,A1,7,Circular reasoning,yes,yes,2026-05-19 07:50:41.668092+00
+87661788-4665-43bd-a95a-ebc3d7b24447,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:55:34.080719+00
+878dccf6-c90b-4783-838a-cda2ae4d8a4e,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,1,Sparrows can fly.,yes,no,2026-05-19 08:03:38.125773+00
+8852d3aa-3a79-4f7e-a73b-58b586cc67fc,f0291424-8425-4d37-ae38-0fa2013490ee,A1,9,It overgeneralizes from one example.,no,no,2026-05-19 07:58:13.588205+00
+8856b18b-5d07-4440-9c2d-791a5a03d379,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 09:13:07.832081+00
+88ce75a9-42d7-43ff-a178-ee83abb76b58,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,2,Some parks are located in unsafe areas.,no,no,2026-05-19 07:56:08.8175+00
+8969fee0-809f-4ef5-928d-2931e948c0be,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:38:47.661139+00
+8a1016d7-946b-4a96-8767-7d02651c0a3f,2fae3989-3440-4447-ac66-393260291e96,A4,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:41:08.657143+00
+8a1314ee-5b31-4a5f-90ef-7474169f7683,03641a2a-2247-4f8b-9635-87d4057f9922,A5,6,People who are naturally alert are more likely to drink coffee.,yes,yes,2026-05-19 07:19:08.142467+00
+8a1b69cd-f301-4cfc-9d0b-f824a637e6b1,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:03:46.362023+00
+8b3ce5e7-be3f-4852-8679-590ad34cbfac,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,1,Some birds cannot fly.,no,no,2026-05-19 09:12:23.246213+00
+8b8298eb-5fb8-4793-9ae6-00818ce5e93f,2fae3989-3440-4447-ac66-393260291e96,A4,3,No dogs are cats.,yes,no,2026-05-19 08:41:08.657143+00
+8b917cbc-f2f1-4dcf-aaf1-7839593ac088,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 09:13:07.832081+00
+8c862944-30a4-4f92-9273-9602e8253c35,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:55:48.043002+00
+8db2632b-a06c-4061-94c7-ac2aa48b7297,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,2,Park maintenance costs are high.,no,yes,2026-05-19 07:55:21.32315+00
+8ec3f4ed-1809-455a-abd9-d970cc03b6bc,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:20:59.703539+00
+8ec5ec44-2dad-469f-90fe-1dcd418f8983,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,7,False cause,no,yes,2026-05-19 07:55:34.080719+00
+8f1a9eb5-f936-412a-9cb7-305caff0c6d0,44171929-c92d-479f-9750-18609fb745cf,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:54:01.808888+00
+90a81121-f980-4c74-8fcb-ea2c65897762,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,3,No dogs are cats.,yes,no,2026-05-19 07:55:34.080719+00
+90c93cda-f43b-4986-b14b-031fc5769ba5,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:49:38.370526+00
+910d22a3-66e5-43bb-8638-df986c5f4f5e,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,5,It assumes cause and effect are the same.,no,no,2026-05-19 08:42:51.749134+00
+9172f7d0-44d4-4f2a-833d-cee3b9e0a0b8,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,5,It confuses necessary and sufficient conditions.,yes,yes,2026-05-19 07:16:00.536052+00
+9185a733-2be5-49aa-a42b-c6d152d2174b,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 09:14:13.458736+00
+927b5adc-fce8-4556-a51a-c8f14474149a,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,1,Sparrows can fly.,yes,yes,2026-05-19 08:32:54.670588+00
+93ce638d-5448-4b72-8541-1e4a0be911fd,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:42:45.547456+00
+93fbd73d-80e8-4767-b181-f82404212557,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,7,False cause,no,yes,2026-05-19 07:56:04.809418+00
+944121d7-a125-4385-9d12-1e7b6926930f,7d2e90ac-7043-4214-8fbc-83257b410321,A1,7,Circular reasoning,yes,no,2026-05-19 07:47:55.532812+00
+9458e226-6d05-43c1-8f74-2b43f7766db8,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 07:56:04.809418+00
+9481af0f-c648-450f-96ca-243d14aeb616,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:52:17.351351+00
+94933afa-4e29-4a38-98bd-b9d753e7bcec,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:57:40.096099+00
+950ebe1d-4260-443a-9b97-497dfb07dc70,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,10,"Invalid, because creativity is unrelated to athletics.",no,yes,2026-05-19 07:55:30.16724+00
+952e942a-dfd0-4741-ae7d-9a3775a1ac6f,44171929-c92d-479f-9750-18609fb745cf,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:54:01.808888+00
+965b5998-a943-4911-b2f6-14c3c9dcc8ec,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:56:37.214596+00
+972a1ac5-d4a7-4545-847c-6e5da7b29a56,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,7,Circular reasoning,yes,yes,2026-05-19 07:55:21.32315+00
+975012a9-a9d6-41dc-8465-0e69e0ed0644,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 09:08:50.303053+00
+9781d054-1cfa-439c-8451-3af5a1017b4b,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,1,Sparrows can fly.,yes,yes,2026-05-19 07:15:32.262252+00
+97dac348-e4eb-495f-aa95-cad6370b65e9,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,5,It ignores other factors.,no,no,2026-05-19 09:12:23.246213+00
+98c04a6b-5611-4187-bdc5-2ccc41b3a18d,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,7,Circular reasoning,yes,yes,2026-05-19 07:54:22.248117+00
+9945cf8b-c3fb-45e7-b19e-f519cbff4625,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,5,It assumes cause and effect are the same.,no,no,2026-05-19 08:38:47.661139+00
+9968c5d3-51a7-42e1-b22b-b4ddadd7d2dc,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,6,Alertness levels vary during the day.,no,no,2026-05-19 08:38:47.661139+00
+9a34fed0-a5f2-4bb3-b087-2d984a9c0c6f,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 08:37:44.93456+00
+9ae9fda8-1829-4ac0-8b4c-80e90b16cf45,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 08:34:54.191985+00
+9b3020b3-853d-4671-856f-4bab20202c8f,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,yes,2026-05-19 07:15:32.262252+00
+9b41d4a1-a709-44f4-a322-57290fc47144,44171929-c92d-479f-9750-18609fb745cf,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:54:01.808888+00
+9b935946-5005-4ebb-a93e-a50abffce4e0,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:42:51.749134+00
+9ba28f50-2fd7-4e93-8fb0-f8221e677745,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,3,No dogs are cats.,yes,no,2026-05-19 07:57:40.096099+00
+9d578f9f-4168-423d-ae5a-c07261557076,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:20:59.703539+00
+9e20179a-87c2-4065-b597-280cfedc3402,1920aa58-f55c-42f1-bffd-ce8fbe31b725,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,yes,2026-05-19 07:20:59.703539+00
+9e7d826f-1d00-4c4e-ae56-ca1adf62378e,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:53:24.321975+00
+9ec3adbd-99c4-4a14-847d-7f58ad5c3594,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:54:22.248117+00
+9f37929c-6e36-423d-a65d-6f44f9c057f1,f0291424-8425-4d37-ae38-0fa2013490ee,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:58:13.588205+00
+a00cbb7e-24c9-4c4f-b753-156d280f4b9c,24c1a71c-bf27-40ec-b997-af97053bed02,A4,1,Sparrows can fly.,yes,no,2026-05-19 08:39:02.06296+00
+a07152e0-7cf0-4d8d-a93d-3156f14cbbc0,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:56:00.946199+00
+a180f05b-6ec2-4fe4-8f33-ef533ee1bbbb,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,3,No dogs are cats.,yes,no,2026-05-19 07:55:43.793712+00
+a19329c3-b545-4afc-8789-28d303e1831b,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 09:13:07.832081+00
+a1b86c37-186f-4c61-a3aa-89a14b6665de,33217776-d590-4192-910d-090dba139669,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:50:41.668092+00
+a264287c-fecf-4645-a37c-596acd5f9a1d,b368709d-4158-4f75-a154-e8265b07bf09,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:49:57.370819+00
+a2ef3325-2986-4a01-9e96-84e4a6d82a93,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,7,Circular reasoning,yes,no,2026-05-19 08:38:47.661139+00
+a4237fe6-f3bd-4061-a123-ad012e43b584,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:55:43.793712+00
+a4b25dac-3e05-4497-afc7-960c74f25add,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,3,No dogs are cats.,yes,yes,2026-05-19 07:16:00.536052+00
+a54ef46b-eb19-4d4d-b6ff-00054a575b9c,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:34:54.191985+00
+a58616f5-f467-4dbb-980c-6c9bc4725752,4999b791-2557-4340-a9f7-8992f204f5d3,A4,7,False cause,no,no,2026-05-19 08:45:02.722149+00
+a59c85e7-1e40-4ab7-b2f5-50e010039524,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 09:14:13.458736+00
+a61f65cc-7d21-41e2-8894-96440702a7d7,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,5,It ignores other factors.,no,yes,2026-05-19 07:55:30.16724+00
+a64ad6e3-0e88-463b-a29e-cc292c8169c2,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:53:11.368584+00
+a65fc23a-afb7-408e-82df-38e24a1254ce,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 09:08:50.303053+00
+a683d027-4acb-43c3-8140-1bac25cd796b,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,1,Sparrows can fly.,yes,no,2026-05-19 09:13:13.099157+00
+a6ad51bc-d799-46af-8929-3b9a3dcefd8e,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,5,It assumes James went to culinary school.,no,no,2026-05-19 07:53:11.368584+00
+a7157811-22e5-4b82-afb8-86c0301f29d5,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,5,It ignores other factors.,no,no,2026-05-19 08:03:46.362023+00
+a72d0058-8bc6-45e0-9118-86ffbfaf6de5,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,6,Many people like the taste of coffee.,no,no,2026-05-19 09:08:50.303053+00
+a7c9ec31-9721-4d60-8cb3-3e6b3ca37878,f0291424-8425-4d37-ae38-0fa2013490ee,A1,7,False dilemma,no,no,2026-05-19 07:58:13.588205+00
+a7f169d3-d95e-42d5-a17a-efe7fb6ce906,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:59:47.401532+00
+a8775fe9-3db0-4113-a404-6b56fc0e96e7,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:59:47.401532+00
+a928ee10-8129-452f-99c4-b3c72ab03b68,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,3,No dogs are cats.,yes,yes,2026-05-19 07:14:38.835077+00
+a98230fe-def2-4285-ba5d-840d0ad34480,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:57:40.096099+00
+a9f81d7c-b3d8-4d9a-8161-2f6303209ca0,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:19:42.003235+00
+aa348382-2660-4916-a791-bf5baa93d38c,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:32:54.670588+00
+aa3e8c33-769f-43e5-b252-e5823827e9fc,b368709d-4158-4f75-a154-e8265b07bf09,A1,4,Remote work always improves productivity.,no,no,2026-05-19 07:49:57.370819+00
+aaa78926-66d3-4881-8d1b-c0818a192264,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 07:59:47.401532+00
+aadff0a4-08c5-497f-acb6-a420069340ce,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,10,"Invalid, because not all athletes are musicians.",no,no,2026-05-19 07:52:17.049354+00
+ab240553-8391-4d91-ab40-0002e1ddf887,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,7,Circular reasoning,yes,yes,2026-05-19 07:56:00.946199+00
+ab519ae8-dc2a-4ca1-ba90-394391080f73,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:21:31.665783+00
+ab58e215-8ae2-4df7-8af9-30bffe179f19,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,1,Sparrows can fly.,yes,yes,2026-05-19 07:55:30.16724+00
+ab781613-241f-4b0f-9bb3-4c672a9b9459,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:53:11.368584+00
+ab8fdd58-4d4c-418e-8e5b-fb11e9bce8ec,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:52:17.049354+00
+abbc65c7-4502-448b-8802-858fd00794ec,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:16:00.536052+00
+abbe4dd7-c1e8-49d4-a3ef-8034044d968f,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,7,Circular reasoning,yes,no,2026-05-19 07:53:08.539112+00
+ad29d6a8-c04a-4e4e-9e73-d3441c10d92c,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:53:24.321975+00
+add917be-26b8-4b0d-ab74-c41695128c5a,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,8,School closes if and only if it snows.,no,no,2026-05-19 07:53:11.368584+00
+ae485b55-9e44-4eaf-b781-7b9a84fdd1a8,96b927a7-50be-4220-a0a7-902cf3082280,A4,4,Happiness and productivity are linked.,yes,yes,2026-05-19 08:36:42.060131+00
+aea9c6e2-b237-4423-a2e2-fa408cb81b00,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,5,It ignores other factors.,no,no,2026-05-19 07:18:51.380951+00
+aeb9064a-8099-4eae-b769-6f540c81d3c3,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,2,Some parks are located in unsafe areas.,no,no,2026-05-19 07:58:55.130763+00
+af361c3f-3103-4c18-aeb7-175961baece8,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 08:42:45.547456+00
+b05e69e1-ad30-4748-a2b2-c641983fdc9b,585dc200-a107-437b-944a-5d3000975b5b,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:57:28.858096+00
+b0b9ae11-7087-4227-bbb8-ac562ca1581b,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:56:00.946199+00
+b0c51e4c-3b58-4b29-af91-3a2e6cf0bee6,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:53:08.539112+00
+b0d8b8b6-ca82-47bc-87f1-627ad1bdd1d6,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 08:37:44.93456+00
+b101e5e1-ae4f-4a3b-8d4e-e27d900550fe,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:52:17.351351+00
+b148e978-de33-48de-a33b-7ce9d5ccc025,03641a2a-2247-4f8b-9635-87d4057f9922,A5,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 07:19:08.142467+00
+b1cd291e-001f-40de-8807-90ef80e1ddcb,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,4,Happiness and productivity are linked.,yes,yes,2026-05-19 07:21:31.665783+00
+b1d3c9d8-f5fb-483c-a1cc-4d4b20f4fb68,33217776-d590-4192-910d-090dba139669,A1,1,Sparrows can fly.,yes,yes,2026-05-19 07:50:41.668092+00
+b2800ae0-9ef3-4ac8-8502-faba8b4f23db,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:55:48.043002+00
+b29203dc-36a6-4e47-9ef6-e33dc8e95ce7,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:55:21.32315+00
+b31256a1-75f0-4dbd-98ea-b83db87f0b4a,4eb5fab2-34de-4a70-93aa-8efe252240e0,A5,3,No dogs are cats.,yes,yes,2026-05-19 07:15:32.262252+00
+b38c9a79-2b16-49cd-b2d8-d6205a2185a1,f0291424-8425-4d37-ae38-0fa2013490ee,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:58:13.588205+00
+b42f8f26-8e7c-47c4-8069-e25930db05dc,f0291424-8425-4d37-ae38-0fa2013490ee,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:58:13.588205+00
+b47c0031-b258-46cf-8377-de9b572619f4,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,10,"Invalid, because not all athletes are musicians.",no,no,2026-05-19 08:34:54.191985+00
+b4e2979e-7f60-4ed8-a669-c011de228d8d,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,7,Circular reasoning,yes,no,2026-05-19 07:52:17.049354+00
+b86ecdf1-d1dd-4563-8830-69fcb9539b42,33217776-d590-4192-910d-090dba139669,A1,9,It draws a false analogy.,no,no,2026-05-19 07:50:41.668092+00
+b8cc230a-a363-4602-a253-6e09f4f954c1,33217776-d590-4192-910d-090dba139669,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:50:41.668092+00
+b8cd8674-cc10-47cd-a3a7-94cd2df43b4c,4885edc6-68dd-477d-90b5-400a1e444e9a,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:52:17.049354+00
+b99c9af1-aaa7-4b4f-9ab7-41dbea33ec62,33217776-d590-4192-910d-090dba139669,A1,2,Some parks are located in unsafe areas.,no,no,2026-05-19 07:50:41.668092+00
+b9f9ff9a-4d5e-468b-8086-fd083b41d752,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:55:34.080719+00
+ba0b8fd0-8cab-4952-a56b-713eff8f0bc8,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 07:53:11.368584+00
+ba0fffec-8326-424a-ae13-9eeb01d486e6,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 09:12:04.173877+00
+bb945991-8d46-4f3b-b8af-f7d78000b545,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:53:24.321975+00
+bbc8bbe1-2f90-4e44-8495-6f63d954c551,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,3,Some mammals are dogs.,no,no,2026-05-19 09:13:07.832081+00
+bd580617-2e34-4ccf-afa5-240044c76b7e,2fae3989-3440-4447-ac66-393260291e96,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:41:08.657143+00
+bf47c114-d715-48bd-8435-9e5c905548a4,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,3,No dogs are cats.,yes,no,2026-05-19 07:49:38.370526+00
+bfd3be30-356d-4e92-bb16-9ca7f260c8ff,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:42:51.749134+00
+c00f4957-710d-4c9c-8410-15bbd44c12cf,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,4,Happiness and productivity are linked.,yes,yes,2026-05-19 07:14:38.835077+00
+c074b477-47d4-4436-b4c7-21fd3af9fb3d,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,8,School closes if and only if it snows.,no,yes,2026-05-19 07:50:42.000239+00
+c0f853fe-8a45-4c83-b818-85c8ceec44bf,33217776-d590-4192-910d-090dba139669,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:50:41.668092+00
+c13b0f79-4ec5-4d8a-abeb-51ef2f6220c6,24c1a71c-bf27-40ec-b997-af97053bed02,A4,7,Circular reasoning,yes,no,2026-05-19 08:39:02.06296+00
+c2306a6d-bb1d-4e3c-a71c-d0b9cdfcf8b6,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:50:42.000239+00
+c288f53b-9d11-468c-973a-bf2f8bd62264,f0291424-8425-4d37-ae38-0fa2013490ee,A1,10,"Invalid, because not all athletes are musicians.",no,no,2026-05-19 07:58:13.588205+00
+c2f5c54a-d536-4d56-83ea-27f1700a81e0,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,6,Coffee drinking is a common habit.,no,no,2026-05-19 07:18:51.380951+00
+c363d1a0-d23b-4485-a260-f85201584b7b,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 08:32:54.670588+00
+c42957bc-5278-4a87-840e-ca1f01ffe520,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,9,It overgeneralizes from one example.,no,no,2026-05-19 07:58:55.130763+00
+c59be794-c21e-4b2d-a57d-d1dbf8fe067e,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,10,"Valid, because at least some athletes who are musicians are creative.",yes,yes,2026-05-19 07:21:31.665783+00
+c5c4f290-7bce-4610-8bbd-611ca9fb6c48,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 09:13:13.099157+00
+c60ba99a-a694-4930-acfe-158269fae312,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 09:14:13.458736+00
+c60de7f2-6063-4222-aa66-c8419a4911ca,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,3,No dogs are cats.,yes,no,2026-05-19 08:42:45.547456+00
+c6467d7b-bd13-44b9-92c1-e763fbd33afe,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,6,People who are naturally alert are more likely to drink coffee.,yes,yes,2026-05-19 07:21:31.665783+00
+c6ed41bc-a0b0-4ab9-a794-901150907930,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 07:55:43.793712+00
+c75dd7c0-2605-4de6-bfb4-45df2ebe02ee,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,8,School will never close unless it snows.,no,no,2026-05-19 09:13:07.832081+00
+c83485f2-3d65-43a6-88d7-d2a63796abae,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,3,No dogs are cats.,yes,no,2026-05-19 07:55:48.043002+00
+c8a25e59-b25e-4f53-9a7d-960104c0ff8b,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,4,Remote work always improves productivity.,no,no,2026-05-19 07:51:27.849817+00
+c9d6cdb0-11a1-45c3-bc69-61c401224a06,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,3,No dogs are cats.,yes,no,2026-05-19 09:14:13.458736+00
+ca040566-5a54-4960-b088-97b676747d5c,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,5,It assumes James went to culinary school.,no,no,2026-05-19 07:21:46.720145+00
+ca051cb1-517f-4d41-827f-4b55a4296129,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,5,It confuses necessary and sufficient conditions.,yes,yes,2026-05-19 07:14:38.835077+00
+cab4fb67-4b7b-4c21-aceb-74cd52f73f37,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:56:08.8175+00
+caeff1f2-a3ba-48e4-84b4-4ac904d347fe,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,8,School closes if and only if it snows.,no,no,2026-05-19 07:21:46.720145+00
+cb3bb23e-71ef-45b9-96f7-752308d0f3db,4999b791-2557-4340-a9f7-8992f204f5d3,A4,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 08:45:02.722149+00
+cc071210-1734-4d56-84d6-edd40f7c4a4d,f44e6ffb-2458-4007-836e-fc2983ac1955,A1,3,Some mammals are dogs.,no,no,2026-05-19 07:53:11.368584+00
+cd2a1d58-1096-42fa-b3ec-b59ea15371b3,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,5,It ignores other factors.,no,no,2026-05-19 07:50:42.000239+00
+ce11508a-8c82-43ac-9bc6-d7a6b853adb8,44171929-c92d-479f-9750-18609fb745cf,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:54:01.808888+00
+ce8247e4-2082-4251-85dc-bea0e095caaa,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,7,Circular reasoning,yes,yes,2026-05-19 09:12:04.173877+00
+cea370b7-ac84-4998-9baa-a35ed61c95b7,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,8,Snow is the only reason for school to close.,no,yes,2026-05-19 07:14:38.835077+00
+ceaa5d0e-67fe-44b9-afbf-0e9ac2314f6b,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,10,"Invalid, because not all athletes are musicians.",no,no,2026-05-19 07:18:51.380951+00
+cf0d9acd-aaba-476e-86a5-dfcb678b906d,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,9,It overgeneralizes from one example.,no,no,2026-05-19 08:34:54.191985+00
+cf4ed7d8-73db-4fcd-aa75-be31f984a85e,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:55:43.793712+00
+cf62c821-537e-4c7a-89ef-da0bc71e29cd,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 07:53:08.539112+00
+d02961d4-cb6b-4be7-adc1-42dcb1458908,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:59:47.401532+00
+d0e39aac-f797-4d2c-baff-6151230c7395,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:51:27.849817+00
+d1caffde-70cb-4d04-923a-8acebf152954,2fae3989-3440-4447-ac66-393260291e96,A4,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 08:41:08.657143+00
+d23524ee-eb30-4147-9bdd-d63c90e269ed,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,7,Circular reasoning,yes,yes,2026-05-19 07:19:42.003235+00
+d268c8e5-5b16-4438-9d05-c011024385d3,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,3,No dogs are cats.,yes,no,2026-05-19 08:37:44.93456+00
+d30ec358-7692-4d72-a18d-3268d45631cb,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,7,False cause,no,no,2026-05-19 08:42:51.749134+00
+d335bb8b-a761-4e0f-b052-6d0e61487011,de529ec1-dc74-4c84-9cfa-03df9dc06ca8,A3,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 09:13:13.099157+00
+d4248719-dade-4669-be80-33dfaf4a7469,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,7,False dilemma,no,no,2026-05-19 08:42:45.547456+00
+d4860f9d-c0d8-4927-9d88-e852e9369590,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,6,People who are naturally alert are more likely to drink coffee.,yes,no,2026-05-19 08:42:45.547456+00
+d4b85d5f-9293-4155-8be1-a91eba7b014b,83e6e1c6-d33d-4871-8fad-59068e4a99a7,A3,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 09:13:07.832081+00
+d4dd985f-4b81-4806-ad14-6e6b39cead99,96b927a7-50be-4220-a0a7-902cf3082280,A4,6,People who are naturally alert are more likely to drink coffee.,yes,yes,2026-05-19 08:36:42.060131+00
+d5cbba28-f6fb-4b8b-854d-b510d537f7cd,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,7,Straw man,no,yes,2026-05-19 08:03:46.362023+00
+d5e3072e-1a5a-46c9-ae26-9ceadb92f73f,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,2,Crime rates are higher in cities with fewer green spaces.,no,no,2026-05-19 07:53:24.321975+00
+d6875a14-b253-446b-a6a6-464e55d53807,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,9,It assumes the conclusion in its premise.,yes,yes,2026-05-19 07:55:30.16724+00
+d69c2c72-a34e-48a5-8642-e69338a4e8fd,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:50:42.000239+00
+d7057bbb-d762-4bdb-9f31-28c980be5db3,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,7,False cause,no,no,2026-05-19 07:51:27.849817+00
+d70c6851-ffa3-40e6-9578-187ca838f2e8,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,3,No dogs are cats.,yes,no,2026-05-19 08:03:46.362023+00
+d714c8f6-c7a7-401f-9495-a4d8fc97e358,614d10b6-31b0-43a8-a13e-c653b381f8d9,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:56:00.946199+00
+d7ca5f0d-9041-48ca-ae2f-70c9c350e7cc,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,2,Some parks are located in unsafe areas.,no,no,2026-05-19 07:19:42.003235+00
+daaebbed-9934-4403-a8d6-baeb3c1b9ce0,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:52:17.351351+00
+db804f76-8097-40d4-adbe-f1b138b5855c,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,4,Remote work always improves productivity.,no,no,2026-05-19 09:08:50.303053+00
+dbf9115a-7294-45c5-8394-c97e67b2cd1b,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,8,School closes if and only if it snows.,no,yes,2026-05-19 08:03:38.125773+00
+dc919b76-9122-4d25-8ef0-9832b072ce3e,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,8,"If school closes, it snowed.",no,no,2026-05-19 09:12:04.173877+00
+dc9e5fd0-fa6a-461e-b160-55b581586ea0,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,7,Circular reasoning,yes,yes,2026-05-19 07:21:31.665783+00
+dde88857-31a6-4805-b622-99734e375d94,96b927a7-50be-4220-a0a7-902cf3082280,A4,7,Ad hominem,no,yes,2026-05-19 08:36:42.060131+00
+de491c52-8679-4760-90b1-bf0333bd6d13,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,4,Remote work always improves productivity.,no,no,2026-05-19 07:55:21.643156+00
+dee55dbe-3b40-4e03-a7b7-ad3a4db5bf4a,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:42:51.749134+00
+e0534c46-de08-4940-b089-bd59d7d78e8f,acba37f5-7a47-48f0-87d0-ba699797ccea,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:55:21.32315+00
+e2fc28b5-5c6c-4186-9845-994761de9aa3,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:53:08.539112+00
+e325e29b-82fc-4979-9b94-8bd22052f09c,e1e95acb-b561-4266-8bc8-4302ec5f923f,A4,6,Alertness levels vary during the day.,no,no,2026-05-19 08:42:51.749134+00
+e3574334-3939-475c-80a7-bbb30d613ca9,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,7,Circular reasoning,yes,yes,2026-05-19 07:50:42.000239+00
+e39c79ed-2545-4782-847f-9b8a936a03ee,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,1,Sparrows can fly.,yes,yes,2026-05-19 07:59:47.401532+00
+e3ceb021-d78e-4111-a30e-287a251a863f,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:51:27.849817+00
+e4bca58f-eb4b-4558-88c1-be393caaa8cf,2fae3989-3440-4447-ac66-393260291e96,A4,1,Sparrows can fly.,yes,no,2026-05-19 08:41:08.657143+00
+e5b3d44d-81a9-4813-a915-9cd50d2cf9f2,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,8,"If school closes, it snowed.",no,no,2026-05-19 07:53:08.539112+00
+e692bc1d-8ded-4ea0-bfdd-fd88dd3d07db,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,7,False cause,no,no,2026-05-19 09:12:23.246213+00
+e6e8f085-d946-4363-8f6d-82247d3921f5,37550e3b-ebd5-432f-818e-e1e3ed6b5ebd,A5,3,No dogs are cats.,yes,yes,2026-05-19 07:21:31.665783+00
+e75bae37-7981-4b13-bb1e-99aeb4fe5678,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,8,School closes if and only if it snows.,no,no,2026-05-19 07:55:21.643156+00
+e77809e7-5d36-4033-8b75-0c1ba5ae6385,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,4,Remote work always improves productivity.,no,no,2026-05-19 07:21:46.720145+00
+e79bfa79-8ea9-4c1c-a16c-565a370e06ae,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,3,No dogs are mammals.,no,no,2026-05-19 08:38:47.661139+00
+e79f8766-a4af-4c1e-94a6-739c1b7e4545,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,6,Alertness levels vary during the day.,no,yes,2026-05-19 09:14:13.458736+00
+e7aa2a7f-f4d3-4a0f-a034-eba1e3c433b1,7f8cfc7a-f5ba-4524-bc95-a73777c2538f,A1,3,No dogs are mammals.,no,no,2026-05-19 07:51:27.849817+00
+e7b88b7f-77ad-4404-af9c-35016f062162,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,7,Circular reasoning,yes,no,2026-05-19 09:08:50.303053+00
+e8179e92-7dc7-4e8a-9787-71c134f8c9b0,44171929-c92d-479f-9750-18609fb745cf,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:54:01.808888+00
+e8359dd5-a7e4-47e4-8028-d09d4fc184f5,b368709d-4158-4f75-a154-e8265b07bf09,A1,5,It ignores other factors.,no,no,2026-05-19 07:49:57.370819+00
+e8480c8b-f991-4cfb-90b9-ce46f8416aec,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 09:08:50.303053+00
+e876e400-8c13-4858-a985-9ef80be89ef4,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,2,Cities with more parks also have higher employment rates.,yes,no,2026-05-19 07:52:17.351351+00
+e8a2781d-b450-4d45-80d6-8d587e95f8bf,b77e57b5-d232-4a3b-b208-6dfc39c678d5,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:53:24.321975+00
+e9d83e0e-3937-4cdf-8ce1-33837127d145,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,2,Park maintenance costs are high.,no,no,2026-05-19 08:42:45.547456+00
+ea1fc418-9c7d-44da-9dc7-9b9e7bbee68d,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:54:22.248117+00
+ea580738-1e49-493a-aa04-dde7cacc18c6,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:55:48.043002+00
+eb6f8516-40a1-438b-9d13-7ebd79b6b57f,3221e601-cb5c-48b6-aea5-a4f8783a1417,A4,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 08:37:44.93456+00
+ebadd075-0724-4b16-92b2-4d787dc71ad2,bfdc1562-aa05-4c8f-851f-fb4cb9474053,A1,7,False cause,no,no,2026-05-19 07:55:48.043002+00
+ebb8a2cd-1f4f-45a2-ae25-61507dd1511f,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,6,People who are naturally alert are more likely to drink coffee.,yes,yes,2026-05-19 07:16:00.536052+00
+ebebee59-5d9f-44e8-9c07-5a48e6d24ecb,c637a01b-3330-4e8a-99bc-d79f25a4e75f,A4,4,Happiness and productivity are linked.,yes,no,2026-05-19 08:42:45.547456+00
+ec2fbd42-a08b-4a13-b346-caab9823524a,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:55:34.080719+00
+ec9ea7b0-9e86-413d-aebf-f5ec0ea5e71b,b368709d-4158-4f75-a154-e8265b07bf09,A1,7,Circular reasoning,yes,yes,2026-05-19 07:49:57.370819+00
+ed459d5d-417c-4d73-a2f6-5dc93c03010f,940ad3b9-c36f-48a2-bb23-9cab4224f1fd,A5,6,Alertness levels vary during the day.,no,no,2026-05-19 07:21:46.720145+00
+ed4f7944-7e73-4244-851f-14bf827d2140,33217776-d590-4192-910d-090dba139669,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:50:41.668092+00
+ed544e3c-9559-4496-a2e3-3eabbc4325ea,8c102489-a5ee-4729-abd0-1cd29e24d8ef,A4,1,Sparrows can fly.,yes,no,2026-05-19 08:38:47.661139+00
+ed836674-d990-470a-9993-2095fd6793fb,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,2,Parks provide places for people to gather.,no,yes,2026-05-19 07:55:30.16724+00
+eda2c68a-4906-4b53-accc-df1cd8073a23,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:53:08.539112+00
+edb84a40-397f-4d79-a756-6a6c5594a101,15a9df8a-9d9f-4001-bb65-a3a0d7f99d60,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:54:22.248117+00
+ee68804e-d401-48a7-8dd4-49ac26d55598,5937e2cc-49ef-4807-93f9-8bf83e05511a,A1,9,It attacks the person instead of the issue.,no,no,2026-05-19 07:55:43.793712+00
+eea87039-4346-4e63-a747-8ab1c5de4379,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,7,False cause,no,yes,2026-05-19 07:56:37.214596+00
+eeaa8e76-229d-4d65-a67c-c9f3533f9d4f,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,7,Ad hominem,no,yes,2026-05-19 07:14:38.835077+00
+ef0de32e-98b1-4af9-ae41-a6c199b1d24d,6eb74d21-df02-4b5f-9a23-15a7ad13c262,A1,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 07:56:37.214596+00
+ef324097-4205-4d45-a73b-dc0a1e287533,33217776-d590-4192-910d-090dba139669,A1,3,No dogs are cats.,yes,no,2026-05-19 07:50:41.668092+00
+ef33f2ae-1f2e-4fc7-af6e-ae89aa948e14,44171929-c92d-479f-9750-18609fb745cf,A1,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 07:54:01.808888+00
+ef9073c5-63ed-40cf-81d0-18ab2c35a0f9,7d2e90ac-7043-4214-8fbc-83257b410321,A1,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 07:47:55.532812+00
+f00e3989-8d94-44bf-bae2-83a83d79c923,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,7,Circular reasoning,yes,no,2026-05-19 07:49:38.370526+00
+f016c48f-47f1-495b-b235-4033307a7010,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,8,"If school closes, it snowed.",no,no,2026-05-19 09:14:13.458736+00
+f03b8940-cc50-443b-8717-bc7ea603c3e5,0283645c-044f-4cda-adc9-5d8db42f2a6d,A3,6,Alertness levels vary during the day.,no,no,2026-05-19 09:12:23.246213+00
+f137969a-2d89-421b-9486-c0d5172f1bef,3f15dc13-b948-4431-b84a-52c60b4e5b0a,A1,1,Some birds cannot fly.,no,no,2026-05-19 07:53:08.539112+00
+f193f128-0e91-4482-ad28-38134290242e,ec0000ce-1a44-4800-b17e-5ef976d6ccfd,A1,3,No dogs are cats.,yes,no,2026-05-19 07:58:55.130763+00
+f1ae61a2-37a3-4623-bd86-1b4db0a61344,c70f42dd-cfa5-47c9-a138-a56d5e72eb34,A1,6,"Coffee contains caffeine, a stimulant.",no,no,2026-05-19 07:55:21.643156+00
+f28f155c-e68b-495a-954b-53c80cc99906,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:49:38.370526+00
+f2917fac-029f-40db-9725-62fe8f29cfd8,14d8d4cd-8b91-4f46-89ff-076083de5a6c,A3,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 09:14:13.458736+00
+f32b1050-d381-4a8a-b367-89fed92287ac,69f0b04f-1a8b-4c7d-8728-de25ae34bea4,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:57:40.096099+00
+f34ef715-bcef-4f0e-a8b5-6f6efd2b5356,f02cf9e1-ece7-43e6-9391-0af52d21d3dc,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:49:38.370526+00
+f356fb73-aa4e-4274-9a13-c9c9ec8aac44,24c1a71c-bf27-40ec-b997-af97053bed02,A4,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:39:02.06296+00
+f37158ca-14a7-4961-b1b2-11f45bbe0bdc,21c243d7-907e-4ee6-921d-1200f25f95f8,A1,6,Alertness levels vary during the day.,no,no,2026-05-19 07:50:42.000239+00
+f38b0164-5ab4-45a1-84e8-1b4989ee0a0b,ef6e66b3-0213-48a7-8350-501b6437b1a6,A3,1,Sparrows can fly.,yes,no,2026-05-19 09:12:04.173877+00
+f3e77bef-9102-49b3-8147-5a627a987b47,96b927a7-50be-4220-a0a7-902cf3082280,A4,9,It overgeneralizes from one example.,no,no,2026-05-19 08:36:42.060131+00
+f401acbe-dc23-43ae-be53-ecc5d024f35b,6d0d6c06-3a6c-4bf7-9710-10a5bf59d517,A4,8,"If school closes, it snowed.",no,no,2026-05-19 08:34:54.191985+00
+f4b60b5b-cceb-4ad2-a3eb-0b84d25779ad,2fae3989-3440-4447-ac66-393260291e96,A4,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 08:41:08.657143+00
+f6cbdec2-cdbe-4a72-a20b-97ee16f6dbb2,4999b791-2557-4340-a9f7-8992f204f5d3,A4,9,It assumes the conclusion in its premise.,yes,no,2026-05-19 08:45:02.722149+00
+f73a9965-3966-4577-bd27-30b5ccbff12d,f673824e-63c8-4c96-9b74-7fa4aee29c4e,A1,5,It confuses necessary and sufficient conditions.,yes,yes,2026-05-19 08:03:38.125773+00
+f756af13-6fff-4d3b-85a4-b85ec3c3d7a2,c7e0ff65-a081-4b56-ae78-45133b507d45,A1,1,Sparrows can fly.,yes,no,2026-05-19 07:56:08.8175+00
+f7f63afe-b092-4cba-bd2e-74af906a272f,fde94a01-94d7-4d33-8ff0-9563f3bf6633,A1,7,Circular reasoning,yes,no,2026-05-19 07:52:17.351351+00
+f80a7f53-4b32-4267-92ed-abfa6bd5a781,6cb08779-dd71-4453-9cb8-7a3947f92d42,A1,4,Happiness and productivity are linked.,yes,no,2026-05-19 07:59:47.401532+00
+f82310d6-bae1-4ea3-a3f3-f549f29e0e51,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,5,It confuses necessary and sufficient conditions.,yes,no,2026-05-19 08:32:54.670588+00
+f8b59f80-9df1-4748-b6e2-5b0a8ef8640b,44171929-c92d-479f-9750-18609fb745cf,A1,10,"Invalid, because creativity is unrelated to athletics.",no,no,2026-05-19 07:54:01.808888+00
+f9980e31-9e80-48f4-9709-9d170942278c,03641a2a-2247-4f8b-9635-87d4057f9922,A5,8,"If school does not close, then it did not snow.",yes,yes,2026-05-19 07:19:08.142467+00
+f9a8fb04-55eb-44a6-b6fa-3ba87f3c74cc,3e0a9957-cf2b-4eca-91fc-d9042639a0dd,A5,7,Circular reasoning,yes,yes,2026-05-19 07:16:00.536052+00
+f9dc06d9-427a-4e3c-bb4c-2f6f8275aca7,435febf9-f4ba-4c77-b77b-ebf0db87d6a8,A1,8,"If school does not close, then it did not snow.",yes,no,2026-05-19 07:56:04.809418+00
+fa2bf6f3-7bec-454d-988e-2ff7c2b98433,c0e4dea2-7804-41d8-8101-57018fa4cf16,A4,10,Valid only if all athletes are musicians.,no,no,2026-05-19 08:32:54.670588+00
+fa2c5ad0-f439-4c08-b31e-84cc8920e153,ac1c05a1-ebb8-4006-94db-fa15da018ec1,A5,1,Sparrows can fly.,yes,no,2026-05-19 07:19:42.003235+00
+faf6d985-1881-43ec-beb9-6a9c2c66dc76,54e30fdd-0944-4457-8a7b-f3e82962bd9b,A3,5,It assumes that all good cooks must be professional chefs.,no,no,2026-05-19 09:08:50.303053+00
+fbb6068a-fa33-4807-90ce-2420aa0e5d72,5a1eba4a-0093-4571-a625-567a9939ec7c,A1,8,School will never close unless it snows.,no,yes,2026-05-19 07:55:30.16724+00
+fbfa7e2b-4171-440c-9d07-927ff6cae7c1,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,10,"Valid, because at least some athletes who are musicians are creative.",yes,no,2026-05-19 07:55:34.080719+00
+fcbc75b4-83b7-47a8-a4ce-578cd4aafbb1,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,1,Sparrows can fly.,yes,yes,2026-05-19 07:14:38.835077+00
+fd295a80-11bc-4d7b-acf2-06ab6b8c8e4d,df4a60f3-7f34-42db-ba7a-04cc77d31e4a,A1,9,It draws a false analogy.,no,no,2026-05-19 08:03:46.362023+00
+fd786a37-0f32-420f-b17a-918f12967bd0,15c46feb-60d7-4400-a9cb-79c857e4cddc,A5,3,Some mammals are dogs.,no,yes,2026-05-19 07:18:51.380951+00
+ff4783c6-ec2a-4121-af7a-8897374c4548,f6b8a75c-0814-4c62-b3e8-41e4a889a84f,A1,1,Some birds cannot fly.,no,no,2026-05-19 07:55:34.080719+00
+ff7894e8-eb74-40f3-86cc-89b9e41f3621,18ce3e06-8eb8-4f02-a025-e47f3948ae94,A5,2,Cities with more parks also have higher employment rates.,yes,yes,2026-05-19 07:14:38.835077+00
